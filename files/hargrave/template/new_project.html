@@ -1,0 +1,36 @@
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<style>
+		body {
+			-webkit-font-smoothing: antialiased;
+			text-rendering: optimizelegibility;
+		}
+
+	 	redacted {
+			background-color: #000000;
+		  color:transparent;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="col-md-9">
+			<div class="text-muted">
+				<div class="row mt-4"></div>
+				<div class="row mt-5"></div>
+
+				<h4 class="text-muted">You're making a new project.</i></h4>
+				<p class="text-muted">There are {{ project_count }} projects.</p>
+
+
+				<input type="text" class="form-control mt-4" id="project_search" onkeyup="filter_projects()" placeholder="What's it going to be called?">
+
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+
+			</div>
+		</div>
+	</div>
+</body>

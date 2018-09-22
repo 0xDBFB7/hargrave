@@ -1,0 +1,61 @@
+<head>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<style>
+		body {
+			-webkit-font-smoothing: antialiased;
+			text-rendering: optimizelegibility;
+		}
+
+	 	redacted {
+			background-color: #000000;
+		  color:transparent;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<!-- <div class="col-md-9"> -->
+			<div class="text-muted">
+				<div class="row mt-4"></div>
+				<div class="row mt-5"></div>
+
+				<h4 class="text-muted">Welcome to {{ORG_NAME}}'s <i>Hargrave</i></h4>
+				<p class="text-muted">There are {{ project_count }} projects.</p>
+
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" class="form-control mt-4 mb-2" id="project_search" onkeyup="filter_projects()" placeholder="Search for project names..">
+					</div>
+					<div class="col-md-3">
+						<button type="button" class="btn btn-success">Create new</button>
+					</div>
+				</div>
+
+				<table class="table" id="projects_table">
+					{% if projects %}
+						<thead>
+							<tr>
+								<th style="">Name</th>
+								<th style="">Blurb</th>
+							</tr>
+						</thead>
+						{% for project in projects %}
+							<tr>
+								<td>{{ project["name"] }}</td>
+								<td>{{ project["blurb"] }}</td>
+							</tr>
+						{% endfor %}
+					{% else %}
+						<div class="alert alert-primary" role="alert">
+						  There's nothing here yet - start building cool stuff!
+						</div>
+					{% endif %}
+				</table>
+
+			</div>
+		<!-- </div> -->
+	</div>
+</body>
