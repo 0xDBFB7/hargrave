@@ -1,6 +1,13 @@
 <head>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/tempusdominus-bootstrap-4.min.css">
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/moment.js"></script>
+  <script src="js/moment-en-ca.js"></script>
+  <script src="js/tempusdominus-bootstrap-4.min.js"></script>
+
+  <script src="js/new_project.js"></script>
 	<style>
 		body {
 			-webkit-font-smoothing: antialiased;
@@ -22,13 +29,64 @@
 				<div class="row mt-4"></div>
 				<div class="row mt-5"></div>
 
-				<h4 class="text-muted">You're making a new project.</i></h4>
-				<p class="text-muted">There are {{ project_count }} projects.</p>
+				<h4 class="text-muted mb-3">You're making a new project. Sweet!</i></h4>
+
+        <div id="alerts"></div>
+
+        <form id="project_form">
+
+          <div class="form-row">
+
+            <div class="col-md-6 mb-3">
+              <label for="project_pretty_name">Display name</label>
+              <input type="text" class="form-control" name="display_name" id="display_name" placeholder="Enter a display name">
+            </div>
+
+            <div class="col-md-6 mb-3">
+              <label for="project_pretty_name">ID</label>
+              <input type="text" class="form-control" name="project_id" id="project_id" placeholder="Enter a project ID - no spaces">
+            </div>
+
+          </div>
+
+          <div class="form-row">
+
+            <div class="col-sm-4">
+                <label for="project_pretty_name">Start date</label>
+                <div class="form-group">
+                    <div class="input-group date" id="start_date" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input" name="start_date" data-target="#start_date"/>
+                        <div class="input-group-append" data-target="#start_date" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label for="sel1">Author:</label>
+                <select class="form-control" name="author" id="author">
+                  {% for user in USERS %}
+                    <option>{{ user }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="checkbox" checked autocomplete="off">Enable Git</input>
+                </label>
+              </div>
+            </div>
+          </div>
 
 
-				<input type="text" class="form-control mt-4" id="project_search" onkeyup="filter_projects()" placeholder="What's it going to be called?">
+          <button type="button" id="create_project" class="btn btn-primary btn-lg btn-block">Create project</button>
 
-        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        </form>
 
 			</div>
 		</div>

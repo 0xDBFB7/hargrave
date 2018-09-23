@@ -7,5 +7,9 @@ $(document).ready(function () {
                 return rex.test($(this).text());
             }).show();
         })
+
     }(jQuery));
+});
+
+$("#container").on('click-row.bs.table', function (e, row, $element) {
 });
