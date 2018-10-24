@@ -1,4 +1,4 @@
-ORG_NAME = "Daniel's totally awesome"
+ORG_NAME = "Daniel's"
 USERS = ["0xDBFB7"]
 
 ROOT_JSON_FILE = 'root.json'

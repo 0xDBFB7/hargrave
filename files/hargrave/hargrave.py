@@ -72,11 +72,22 @@ def index():
 def new_project():
     if request.method == 'POST':
         log(request.form)
+
         if(not request.form.get("project_id")):
             return json.dumps({"success":0,"alert_message":"You haven't entered a project id."})
 
+        if(not request.form.get("display_name")):
+            return json.dumps({"success":0,"alert_message":"You haven't entered a display name."})
+
+        if(not request.form.get("start_date")):
+            return json.dumps({"success":0,"alert_message":"You haven't entered a start date."})
+
+        if(not request.form.get("display_name")):
+            return json.dumps({"success":0,"alert_message":"You haven't set the author."})
+
         root_json = load_json(hargrave_conf.ROOT_JSON_FILE)
 
+        #Some root json file sanity checking
         if(not root_json):
             root_json = {}
         if(not 'projects' in root_json.keys()):
@@ -85,8 +96,8 @@ def new_project():
         if([x for x in root_json["projects"] if x['project_id']]):
             return json.dumps({"success":0,"alert_message":"That project ID already exists."})
 
+        #Write the new project to disk.
         project = {}
-
         #All written timestamps are unix epochs, purely because I happen to like unix time.
         project['start_date'] = datetime.strptime(request.form.get("start_date"),'%Y-%m-%d %I:%M %p').strftime("%s")
         project['creation_date'] = time.time()

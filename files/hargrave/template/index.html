@@ -43,7 +43,7 @@
 							  <div class="input-group-btn">
 							  	<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>a</button>
 							  </div>
-								<input type="text" class="form-control" id="project_search" onkeyup="filter_projects()" placeholder="Search for project names..">
+								<input type="text" class="form-control" id="filter" placeholder="Search for project names..">
 							</div>
 						</div>
 						<div class="col-3"></div>
@@ -62,18 +62,20 @@
 								<th style="">Blurb</th>
 							</tr>
 						</thead>
-						{% for project in projects %}
-							<tr onclick="" name='{{ project["project_id"] }}'>
-								<td>{{ project["display_name"] }}</td>
-								<td>{{ project["project_id"] }}</td>
-								<td>{{ project["blurb"] }}</td>
-							</tr>
-						{% endfor %}
-					{% else %}
-						<div class="alert alert-primary" role="alert">
-						  There's nothing here yet - start building cool stuff!
-						</div>
-					{% endif %}
+						<tbody class="searchable">
+							{% for project in projects %}
+								<tr class="clickable" id='{{ project["project_id"] }}' name='{{ project["project_id"] }}'>
+									<td>{{ project["display_name"] }}</td>
+									<td>{{ project["project_id"] }}</td>
+									<td>{{ project["blurb"] }}</td>
+								</tr>
+							{% endfor %}
+						{% else %}
+							<div class="alert alert-primary" role="alert">
+							  There's nothing here yet - start building cool stuff!
+							</div>
+						{% endif %}
+					</tbody>
 				</table>
 
 			</div>

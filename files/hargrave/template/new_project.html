@@ -74,15 +74,15 @@
               </div>
             </div>
 
-            <div class="col-sm-4">
-              <div class="btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-                  <input type="checkbox" checked autocomplete="off">Enable Git</input>
-                </label>
-              </div>
-            </div>
           </div>
 
+          <div id="git_entry" class="form-row">
+
+            <div class="col-md-6 mb-3">
+              <label for="project_pretty_name">Git remote origin URL</label>
+              <input type="text" class="form-control" name="display_name" id="display_name" placeholder="https://">
+            </div>
+          </div>
 
           <button type="button" id="create_project" class="btn btn-primary btn-lg btn-block">Create project</button>
 

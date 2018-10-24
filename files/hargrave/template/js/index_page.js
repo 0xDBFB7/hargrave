@@ -6,10 +6,12 @@ $(document).ready(function () {
             $('.searchable tr').filter(function () {
                 return rex.test($(this).text());
             }).show();
+
         })
 
     }(jQuery));
-});
 
-$("#container").on('click-row.bs.table', function (e, row, $element) {
+    $('#projcts_table').on("click-cell.bs.table", function() {
+     alert("Test");
+    });
 });

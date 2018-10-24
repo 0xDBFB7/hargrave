@@ -598,3 +598,150 @@ DEBUG:root:ImmutableMultiDict([('project_id', 'test2'), ('start_date', '2018-09-
 INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:39:44] "POST /new_project HTTP/1.1" 200 -
 DEBUG:root:ImmutableMultiDict([('project_id', 'test2'), ('start_date', '2018-09-23 2:38 PM'), ('author', '0xDBFB7'), ('display_name', 'test2')])
 INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:39:45] "POST /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:43:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:53:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:55:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:55:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:56:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:56:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:57:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:58:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:59:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:59:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:59:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 14:59:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_conf.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_conf.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:04:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:07:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:07:05] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:08:05] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:08:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:08:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:09:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:10:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:10:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:10:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:10:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:11:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:12:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:15:36] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:16:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:17:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:17:31] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:17:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:19:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:20:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Sep/2018 17:20:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:04:17] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:04:18] "GET /js/moment-en-ca.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:04:18] "GET /css/tempusdominus-bootstrap-4.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:04:18] "GET /js/new_project.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:04:18] "GET /js/moment.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:04:18] "GET /js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:04:18] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:04:18] "GET /css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:15:09] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:15:10] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:15:40] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:15:50] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:15:56] "GET /new_project HTTP/1.1" 200 -
+DEBUG:root:ImmutableMultiDict([('project_id', ''), ('author', '0xDBFB7'), ('start_date', '2018-09-26 9:16 PM'), ('display_name', ''), ('display_name', '')])
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:16:26] "POST /new_project HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:18:06] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:18:06] "GET /new_project HTTP/1.1" 200 -
+DEBUG:root:ImmutableMultiDict([('author', '0xDBFB7'), ('start_date', '2018-09-26 9:18 PM'), ('project_id', ''), ('display_name', 'test'), ('display_name', '')])
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:18:12] "POST /new_project HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug:127.0.0.1 - - [26/Sep/2018 21:20:29] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Sep/2018 17:00:55] "GET /css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Sep/2018 17:00:55] "GET /js/moment.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Sep/2018 17:00:59] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Sep/2018 17:00:59] "GET /js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Sep/2018 17:00:59] "GET /css/tempusdominus-bootstrap-4.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Sep/2018 17:00:59] "GET /js/moment-en-ca.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Sep/2018 17:00:59] "GET /js/new_project.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Sep/2018 17:00:59] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 -

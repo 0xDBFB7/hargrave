@@ -44,3 +44,10 @@ $(function () {
     });
   });
 });
+
+function git_enable() {
+    if (document.getElementById('git_enable').checked) {
+        document.getElementById('git_entry').style.display = 'block';
+    }
+    else document.getElementById('git_entry').style.display = 'none';
+}
