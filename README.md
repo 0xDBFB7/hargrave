@@ -1,4 +1,10 @@
-A way to improve the quality of my research by imposing a slight schema restriction on my notes, and integrating equations and PDF sources into technical reports.
+A way to improve the quality of my research by imposing a slight schema restriction on my notes, integrating equations and PDF sources into proper technical reports, and saving the endless tedium of shifting files around.
+
+As of this writing, I have a total of 60 project folders consuming ~1.5 Tb, ranging in duration from quick, one-day experiments to rigorous half-decade "flagship" projects.
+
+Handling all these projects and notes with just a file browser and text editor is becoming quite onerous. In addition, my note quality is quite poor; images of phenomena are not linked to experiment parameters; etc.
+
+Version control, however, is currently managed superbly via Git; in the interest of not reinventing the wheel, I figured whatever I came up with should probably be compatible with git diffs.
 
 Hargrave is inspired greatly by [ELOG](https://elog.psi.ch/elog/).
 
@@ -49,6 +55,7 @@ If you're going to use this, make sure that the http port in question is firewal
 - [ ] Login using a custom CA and user certs
 - [ ] when a project is set to public, switches all source links from internal archive to external links for copyright reasons
 - [ ] "pinned project" at homepage
+- [ ] Project ordering selectable - frequently or recently accessed.
 - [ ] inline latex to html/png
 - [ ] ~~SSH compatible?~~ No longer required - cert pinning deals with this just fine.
 - [ ] ~~android app integration for science on-the-go?~~ Using certs obviates the need for this.
