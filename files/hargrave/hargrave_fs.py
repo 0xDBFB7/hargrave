@@ -32,7 +32,6 @@ CWD = os.getcwd() + '/'
 #     save_webpage(url='http://example-site.com/index.html',download_loc='path/to/downloads')
 
 ##############Settings helper functions#############
-
 #This should try to retrieve the settings dictionary from the configured file.
 #If the file does not exist, it should attempt to create it.
 #Other errors are just propagated out.
@@ -62,7 +61,7 @@ def initialize_settings():
 
 ############Root JSON helper functions########
 #This stuff is nearly duplicated from above - not particularly clean.
-#I'll fix that once I figure out exactly how project nesting will work
+#I'll fix that once I figure out how exactly project nesting should work.
 def get_root_json():
     try:
         loaded_json = load_json(get_settings()["root_json_file"])
@@ -74,6 +73,13 @@ def get_root_json():
 
 def write_root_json(new_dict):
     write_json(get_settings()["root_json_file"], new_dict)
+
+
+#So, what's required in the root-level project json?
+#Timestamps and author and stuff should be in the per-project json,
+#since otherwise you wouldn't be able to just send someone the project folder.
+#we want projects to be almost entirely self-contained for ease of sharing.
+
 
 def initialize_root_json():
     defaults = {}

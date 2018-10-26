@@ -81,6 +81,7 @@ def create_project():
 
 @app.route('/new_project',methods=['GET', 'POST'])
 def new_project():
+    current_settings = hargrave_fs.get_settings()
     #Form data is sent via a JS/ajax post request. The reply is injected into an alert.
     if request.method == 'POST':
 
@@ -93,9 +94,10 @@ def new_project():
 
         return json.dumps({"success":1,"project_id":request.form.get("project_id")})
 
-    return render_template('new_project.html', USERS=hargrave_conf.USERS)
-
+    return render_template('new_project.html', USERS=current_settings["users"])
 
 @app.route('/project',methods=['GET', 'POST'])
 def project():
-    return render_template('project.html', USERS=hargrave_conf.USERS)
+    current_settings = hargrave_fs.get_settings()
+
+    return render_template('project.html', USERS=current_settings["users"])
