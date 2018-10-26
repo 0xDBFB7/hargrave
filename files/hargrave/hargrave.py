@@ -71,9 +71,24 @@ def initialize_settings():
     defaults['users'] = ["0xDBFB7"]
     defaults['default_root_directories'] = ['sources','media','hardware','firmware','software','mechanical']
     defaults['project_rel_archive_dir'] = 'sources'
+    defaults['root_json_file'] = CWD+'/root.json'
     defaults['default_project_categories'] = ['Flagship', 'Technique', 'Learning']
     log("initializing settings")
     write_settings(defaults)
+
+############Root JSON helper functions#########
+    #Some root json file sanity checking
+def get_root_json()
+    """
+    This tries to read the "root" json file, which stores project directory
+    references and such "top-level" stuffs.
+    """
+    get_settings()["root_json_file"]
+
+    if(not root_json):
+        root_json = {}
+    if(not 'projects' in root_json.keys()):
+        root_json['projects'] = []
 
 
 @app.route('/js/<path:path>')
@@ -124,23 +139,11 @@ def validate_project_form(form_dict,settings_dict):
         return json.dumps({"success":0,"alert_message":"You haven't set the author."})
 
 
-    #Some root json file sanity checking
-    if(not root_json):
-        root_json = {}
-    if(not 'projects' in root_json.keys()):
-        root_json['projects'] = []
-
     if([x for x in root_json["projects"] if x['project_id']]):
         return json.dumps({"success":0,"alert_message":"That project ID already exists."})
 
 def create_project():
     root_json = load_json(hargrave_conf.ROOT_JSON_FILE)
-
-    #Some root json file sanity checking
-    if(not root_json):
-        root_json = {}
-    if(not 'projects' in root_json.keys()):
-        root_json['projects'] = []
 
 
 

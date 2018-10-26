@@ -1,3 +1,5 @@
+A way to improve the quality of my research by imposing a slight schema restriction on my notes, and integrating equations and PDF sources into technical reports.
+
 Hargrave is inspired greatly by [ELOG](https://elog.psi.ch/elog/).
 
 ELOG is very nearly what I wanted; however, I like working "in-place" on files, and wanted a
@@ -7,7 +9,7 @@ specific directory structure as to project files, folders, and sources.
 
 Hargrave uses Apache's SSL user certificate functionality for login; a CA is created locally and used to generate signed user certs in order to authenticate browsers.
 
-Anyone who can access Hargrave immediately obtains full write permissions to the server's drives.
+Anyone who can access Hargrave immediately obtains full write permissions to the host filesystem.
 
 If you're going to use this, make sure that the http port in question is firewalled and inaccessible externally. If you want to publish a read-only copy, I recommend you set up a physically separate server (a GCE VM, in my case).
 
@@ -28,7 +30,6 @@ If you're going to use this, make sure that the http port in question is firewal
 - [ ] "process steps" entry, with custom per-experiment parameters and rigid schema
 - [ ] Adds and removes images from media/ from gitignore as desired (and as size allows)
 - [ ] "file link" procedure - link project description to README, say
-- [ ] SSH compatible?
 - [ ] Special /documents directory?
 - [ ] *all human-readable flat files* for ease of debugging. No database besides json files - this'll make version control a little more manageable.
 - [ ] read-only mode for publicizing results
@@ -49,5 +50,6 @@ If you're going to use this, make sure that the http port in question is firewal
 - [ ] when a project is set to public, switches all source links from internal archive to external links for copyright reasons
 - [ ] "pinned project" at homepage
 - [ ] inline latex to html/png
-- [ ] ~~android app integration?~~ Using certs obviates the need for this.
+- [ ] ~~SSH compatible?~~ No longer required - cert pinning deals with this just fine.
+- [ ] ~~android app integration for science on-the-go?~~ Using certs obviates the need for this.
 - [ ] "copy process" button
