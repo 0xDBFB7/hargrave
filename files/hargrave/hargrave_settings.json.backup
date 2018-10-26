@@ -1,0 +1,22 @@
+{
+ "project_rel_archive_dir": "sources",
+ "users": [
+  "0xDBFB7"
+ ],
+ "default_project_categories": [
+  "Flagship",
+  "Technique",
+  "Learning"
+ ],
+ "organization_name": "Daniel's",
+ "default_root_directories": [
+  "sources",
+  "media",
+  "hardware",
+  "firmware",
+  "software",
+  "mechanical"
+ ],
+ "style_blurb": "You're talking to future you.",
+ "a": 5
+}

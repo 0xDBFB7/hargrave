@@ -76,7 +76,6 @@ def initialize_settings():
     write_settings(defaults)
 
 
-
 @app.route('/js/<path:path>')
 def send_js(path):
     return send_from_directory('template/js', path)
@@ -105,49 +104,74 @@ def index():
                                         projects=projects)
 
 
+def validate_project_form(form_dict,settings_dict):
+    """
+    A little bit of server-side validation for the 'new project' form.
+    Returns 0 if everything looks good,
+    or dumps a json string with an error message if something needs attention.
+    """
+
+    if(not form_dict["project_id"]):
+        return json.dumps({"success":0,"alert_message":"You haven't entered a project id."})
+
+    if(not form_dict["display_name"]):
+        return json.dumps({"success":0,"alert_message":"You haven't entered a display name."})
+
+    if(not form_dict["start_date"]):
+        return json.dumps({"success":0,"alert_message":"You haven't entered a start date."})
+
+    if(not form_dict["author"]):
+        return json.dumps({"success":0,"alert_message":"You haven't set the author."})
+
+
+    #Some root json file sanity checking
+    if(not root_json):
+        root_json = {}
+    if(not 'projects' in root_json.keys()):
+        root_json['projects'] = []
+
+    if([x for x in root_json["projects"] if x['project_id']]):
+        return json.dumps({"success":0,"alert_message":"That project ID already exists."})
+
+def create_project():
+    root_json = load_json(hargrave_conf.ROOT_JSON_FILE)
+
+    #Some root json file sanity checking
+    if(not root_json):
+        root_json = {}
+    if(not 'projects' in root_json.keys()):
+        root_json['projects'] = []
+
+
+
+    #Write the new project to disk.
+    project = {}
+    #All written timestamps are unix epochs, purely because I happen to like unix time.
+    project['start_date'] = datetime.strptime(request.form.get("start_date"),'%Y-%m-%d %I:%M %p').strftime("%s")
+    project['creation_date'] = time.time()
+    project['display_name'] = request.form.get('display_name')
+    project['project_id'] = request.form.get('project_id')
+
+    root_json['projects'].append(project)
+
+    write_json(hargrave_conf.ROOT_JSON_FILE,root_json)
+
+    subprocess.call(["xdg-open", hargrave_conf.ROOT_PROJECT_DIR])
+
+    return json.dumps({"success":1,"project_id":request.form.get("project_id")})
+
+
 @app.route('/new_project',methods=['GET', 'POST'])
 def new_project():
+    #Form data is sent via a JS/ajax post request. The reply is injected into an alert.
     if request.method == 'POST':
-        log(request.form)
 
-        if(not request.form.get("project_id")):
-            return json.dumps({"success":0,"alert_message":"You haven't entered a project id."})
+        validation_result = validate_project_form(request.form)
+        if(validation_result):
+            #If something's wrong with the user's input, throw up an error.
+            return validation_result
 
-        if(not request.form.get("display_name")):
-            return json.dumps({"success":0,"alert_message":"You haven't entered a display name."})
-
-        if(not request.form.get("start_date")):
-            return json.dumps({"success":0,"alert_message":"You haven't entered a start date."})
-
-        if(not request.form.get("display_name")):
-            return json.dumps({"success":0,"alert_message":"You haven't set the author."})
-
-        root_json = load_json(hargrave_conf.ROOT_JSON_FILE)
-
-        #Some root json file sanity checking
-        if(not root_json):
-            root_json = {}
-        if(not 'projects' in root_json.keys()):
-            root_json['projects'] = []
-
-        if([x for x in root_json["projects"] if x['project_id']]):
-            return json.dumps({"success":0,"alert_message":"That project ID already exists."})
-
-        #Write the new project to disk.
-        project = {}
-        #All written timestamps are unix epochs, purely because I happen to like unix time.
-        project['start_date'] = datetime.strptime(request.form.get("start_date"),'%Y-%m-%d %I:%M %p').strftime("%s")
-        project['creation_date'] = time.time()
-        project['display_name'] = request.form.get('display_name')
-        project['project_id'] = request.form.get('project_id')
-
-        root_json['projects'].append(project)
-
-        write_json(hargrave_conf.ROOT_JSON_FILE,root_json)
-
-        subprocess.call(["xdg-open", hargrave_conf.ROOT_PROJECT_DIR])
-
-        return json.dumps({"success":1,"project_id":request.form.get("project_id")})
+        validate_project()
 
     return render_template('new_project.html', USERS=hargrave_conf.USERS)
 

@@ -1,5 +1,15 @@
 {
- "style_blurb": "You're talking to future you.",
+ "organization_name": "Daniel's",
+ "a": 5,
+ "project_rel_archive_dir": "sources",
+ "users": [
+  "0xDBFB7"
+ ],
+ "default_project_categories": [
+  "Flagship",
+  "Technique",
+  "Learning"
+ ],
  "default_root_directories": [
   "sources",
   "media",
@@ -8,14 +18,5 @@
   "software",
   "mechanical"
  ],
- "default_project_categories": [
-  "Flagship",
-  "Technique",
-  "Learning"
- ],
- "organization_name": "Daniel's",
- "project_rel_archive_dir": "sources",
- "users": [
-  "0xDBFB7"
- ]
+ "style_blurb": "You're talking to future you."
 }
