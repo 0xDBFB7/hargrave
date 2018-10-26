@@ -16,13 +16,13 @@ If you're going to use this, make sure that the http port in question is firewal
 ### The name
 
 [Lawrence Hargrave]( https://en.wikipedia.org/wiki/Lawrence_Hargrave) was a badass.
-
+```
   Workers must root out the idea [that] by keeping the results of their labours to themselves[,] a fortune will be assured to them. Patent fees are much wasted money.
 
   The flying machine of the future will not be born fully fledged and capable of a flight for 1000 miles or so. Like everything else it must be evolved gradually. The first difficulty is to get a thing that will fly at all. When this is made, a full description should be published as an aid to others.
 
   Excellence of design and workmanship will always defy competition.
-
+```
 ### My requirements:
 
 - [ ] Configurable auto-generated project directory structure
