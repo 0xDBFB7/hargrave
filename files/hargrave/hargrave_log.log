@@ -1,0 +1,28 @@
+DEBUG:root:initializing settings
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "style_blurb": "You're talking to future you.",
+ "default_root_directories": [
+  "sources",
+  "media",
+  "hardware",
+  "firmware",
+  "software",
+  "mechanical"
+ ],
+ "default_project_categories": [
+  "Flagship",
+  "Technique",
+  "Learning"
+ ],
+ "organization_name": "Daniel's",
+ "project_rel_archive_dir": "sources",
+ "users": [
+  "0xDBFB7"
+ ]
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'style_blurb': "You're talking to future you.", 'project_rel_archive_dir': 'sources', 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'users': ['0xDBFB7'], 'organization_name': "Daniel's", 'default_project_categories': ['Flagship', 'Technique', 'Learning']}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json

@@ -1,13 +1,14 @@
-
 import hargrave_conf
 
 from datetime import datetime, timedelta
 import time
-
+import sympy
 import subprocess
+from shutil import copy
+import os
+import logging
 
 ##################Logging stuff!################
-import logging
 logging.basicConfig(filename=hargrave_conf.LOG_FILE,level=logging.DEBUG)
 
 def log(message):
@@ -21,26 +22,59 @@ app = Flask(__name__,template_folder="template", static_url_path='/assets')
 
 ################JSON import and helper functions########
 import json
+
 def load_json(filename):
-    try:
-        return json.loads(open(filename).read())
-    except:
-        log("Root json file blank.")
+    loaded_json = json.loads(open(filename).read())
+    log("Read json \n{}\n from {}".format(loaded_json,filename))
+    return loaded_json
+
 
 def write_json(filename,data):
     dumped_json = json.dumps(data,indent=True)
+    log("Writing json\n {} to {}".format(dumped_json, filename))
     #Make a backup copy, just in case something bad happens while writing
     try:
-        open(filename+'.backup','w+').write(open(filename).read())
-    except:
-        log('Json file created')
+        open(filename+'.backup','w+').write(open(filename,'r').read())
+    except FileNotFoundError:
+        pass
+        #of course, we can't really do that if the file doesn't yet exist.
     open(filename,'w+').write(dumped_json)
+    log("Write complete.")
 
 ##############Filesystem helper functions###########
-from shutil import copy
-import os
+CWD = os.getcwd() + '/'
+
 # def archive_source(url,location):
 #     save_webpage(url='http://example-site.com/index.html',download_loc='path/to/downloads')
+
+##############Settings helper functions#############
+
+#This should try to retrieve the settings dictionary from the configured file.
+#If the file does not exist, it should attempt to create it.
+#Other errors are just propagated out.
+def get_settings():
+    try:
+        loaded_json = load_json(hargrave_conf.SETTINGS_FILE)
+        return loaded_json
+    except FileNotFoundError:
+        initialize_settings()
+        loaded_json = load_json(hargrave_conf.SETTINGS_FILE)
+        return loaded_json
+
+def write_settings(new_settings_dict):
+    write_json(hargrave_conf.SETTINGS_FILE, new_settings_dict)
+
+def initialize_settings():
+    defaults = {}
+    defaults["organization_name"] = "Daniel's"
+    defaults["style_blurb"] = "You're talking to future you."
+    defaults['users'] = ["0xDBFB7"]
+    defaults['default_root_directories'] = ['sources','media','hardware','firmware','software','mechanical']
+    defaults['project_rel_archive_dir'] = 'sources'
+    defaults['default_project_categories'] = ['Flagship', 'Technique', 'Learning']
+    log("initializing settings")
+    write_settings(defaults)
+
 
 
 @app.route('/js/<path:path>')
@@ -55,6 +89,8 @@ def send_image(path):
 def send_css(path):
     return send_from_directory('template/css', path)
 
+
+
 ##################Serve the index page#############
 @app.route('/')
 def index():
@@ -67,6 +103,7 @@ def index():
 
     return render_template('index.html',ORG_NAME=hargrave_conf.ORG_NAME,
                                         projects=projects)
+
 
 @app.route('/new_project',methods=['GET', 'POST'])
 def new_project():
