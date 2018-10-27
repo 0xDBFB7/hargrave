@@ -1,5 +1,5 @@
 import hargrave_conf
-
+import json
 from datetime import datetime, timedelta
 import time
 import sympy
@@ -9,6 +9,7 @@ import os
 import logging
 import hargrave_fs
 from log import *
+import re
 #########Flask import and init stuff!###########
 from flask import Flask
 from flask import (request, redirect, url_for, session,
@@ -47,25 +48,31 @@ def validate_project_form(form_dict):
     """
 
     if(not form_dict["project_id"]):
-        return json.dumps({"success":0,"alert_message":"You haven't entered a project id."})
+        return {"success":0,"alert_message":"You haven't entered a project ID."}
+
+    if(not form_dict["project_id"].replace('_','').isalpha()):
+        return {"success":0,"alert_message":"Sorry, the project ID only accepts ⁠⁠⁠\
+         letters or underscores."}
 
     if(not form_dict["display_name"]):
-        return json.dumps({"success":0,"alert_message":"You haven't entered a display name."})
+        return {"success":0,"alert_message":"You haven't entered a display name."}
 
     if(not form_dict["start_date"]):
-        return json.dumps({"success":0,"alert_message":"You haven't entered a start date."})
+        return {"success":0,"alert_message":"You haven't entered a start date."}
 
     if(not form_dict["author"]):
-        return json.dumps({"success":0,"alert_message":"You haven't set the author."})
+        return {"success":0,"alert_message":"You haven't set the author."}
 
-    if([x for x in root_json["projects"] if x['project_id']]):
-        return json.dumps({"success":0,"alert_message":"That project ID already exists."})
+    if([x for x in hargrave_fs.get_root_json()["projects"] if x['project_id']]):
+        return {"success":0,"alert_message":"That project ID already exists."}
+
+    return 0
 
 def create_project():
     root_json = hargrave_fs.load_json(hargrave_conf.ROOT_JSON_FILE)
 
     project = {}
-    #All written timestamps are unix epochs, purely because I happen to like unix time.
+    #All timestamps are unix epochs, purely because I happen to like unix time.
     project['start_date'] = datetime.strptime(request.form.get("start_date"),'%Y-%m-%d %I:%M %p').strftime("%s")
     project['creation_date'] = time.time()
     project['display_name'] = request.form.get('display_name')

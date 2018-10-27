@@ -74,12 +74,10 @@ def get_root_json():
 def write_root_json(new_dict):
     write_json(get_settings()["root_json_file"], new_dict)
 
-
 #So, what's required in the root-level project json?
 #Timestamps and author and stuff should be in the per-project json,
 #since otherwise you wouldn't be able to just send someone the project folder.
-#we want projects to be almost entirely self-contained for ease of sharing.
-
+#We want projects to be almost entirely self-contained for ease of sharing.
 
 def initialize_root_json():
     defaults = {}
