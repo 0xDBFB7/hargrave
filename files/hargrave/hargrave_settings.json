@@ -1,0 +1,22 @@
+{
+ "organization_name": "Daniel's",
+ "default_project_categories": [
+  "Flagship",
+  "Technique",
+  "Learning"
+ ],
+ "project_rel_archive_dir": "sources",
+ "default_root_directories": [
+  "sources",
+  "media",
+  "hardware",
+  "firmware",
+  "software",
+  "mechanical"
+ ],
+ "users": [
+  "0xDBFB7"
+ ],
+ "root_json_file": "/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json",
+ "style_blurb": "You're talking to future you."
+}

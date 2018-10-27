@@ -31,35 +31,11 @@ CWD = os.getcwd() + '/'
 # def archive_source(url,location):
 #     save_webpage(url='http://example-site.com/index.html',download_loc='path/to/downloads')
 
-##############Settings helper functions#############
+############Root JSON helper functions########
 #This should try to retrieve the settings dictionary from the configured file.
 #If the file does not exist, it should attempt to create it.
 #Other errors are just propagated out.
-def get_settings():
-    try:
-        loaded_json = load_json(hargrave_conf.SETTINGS_FILE)
-        return loaded_json
-    except FileNotFoundError:
-        initialize_settings()
-        loaded_json = load_json(hargrave_conf.SETTINGS_FILE)
-        return loaded_json
 
-def write_settings(new_settings_dict):
-    write_json(hargrave_conf.SETTINGS_FILE, new_settings_dict)
-
-def initialize_settings():
-    defaults = {}
-    defaults["organization_name"] = "Daniel's"
-    defaults["style_blurb"] = "You're talking to future you."
-    defaults['users'] = ["0xDBFB7"]
-    defaults['default_root_directories'] = ['sources','media','hardware','firmware','software','mechanical']
-    defaults['project_rel_archive_dir'] = 'sources'
-    defaults['root_json_file'] = CWD+'/root.json'
-    defaults['default_project_categories'] = ['Flagship', 'Technique', 'Learning']
-    log("initializing settings")
-    write_settings(defaults)
-
-############Root JSON helper functions########
 #This stuff is nearly duplicated from above - not particularly clean.
 #I'll fix that once I figure out how exactly project nesting should work.
 def get_root_json():
@@ -72,7 +48,7 @@ def get_root_json():
         return loaded_json
 
 def write_root_json(new_dict):
-    write_json(get_settings()["root_json_file"], new_dict)
+    write_json(hargrave_conf.ROOT_JSON_FILE, new_dict)
 
 #So, what's required in the root-level project json?
 #Timestamps and author and stuff should be in the per-project json,
@@ -81,8 +57,15 @@ def write_root_json(new_dict):
 
 def initialize_root_json():
     defaults = {}
-    defaults['projects'] = []
-    log("initializing root json")
+    defaults["settings"] = {}
+    defaults["settings"]["organization_name"] = "Daniel's"
+    defaults["settings"]["style_blurb"] = "You're talking to future you."
+    defaults["settings"]['users'] = ["0xDBFB7"]
+    defaults["settings"]['default_root_directories'] = ['sources','media','hardware','firmware','software','mechanical']
+    defaults["settings"]['project_rel_archive_dir'] = 'sources/'
+    defaults["settings"]['default_project_categories'] = ['Flagship', 'Technique', 'Learning']
+    defaults["projects"] = []
+    log("initializing settings")
     write_root_json(defaults)
 
 # def get_hierarchical_json(project=None):

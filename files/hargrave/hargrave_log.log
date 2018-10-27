@@ -2508,3 +2508,166 @@ DEBUG:root:Read json
 DEBUG:root:Read json 
 {'projects': []}
  from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "style_blurb": "You're talking to future you.",
+ "organization_name": "Daniel's",
+ "users": [
+  "0xDBFB7"
+ ],
+ "default_project_categories": [
+  "Flagship",
+  "Technique",
+  "Learning"
+ ],
+ "project_rel_archive_dir": "sources",
+ "default_root_directories": [
+  "sources",
+  "media",
+  "hardware",
+  "firmware",
+  "software",
+  "mechanical"
+ ],
+ "root_json_file": "/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json"
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'users': ['0xDBFB7'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources', 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'root_json_file': '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json'}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:Read json 
+{'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'users': ['0xDBFB7'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources', 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'root_json_file': '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json'}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:Writing json
+ {
+ "a": 5,
+ "style_blurb": "You're talking to future you.",
+ "organization_name": "Daniel's",
+ "users": [
+  "0xDBFB7"
+ ],
+ "default_project_categories": [
+  "Flagship",
+  "Technique",
+  "Learning"
+ ],
+ "project_rel_archive_dir": "sources",
+ "default_root_directories": [
+  "sources",
+  "media",
+  "hardware",
+  "firmware",
+  "software",
+  "mechanical"
+ ],
+ "root_json_file": "/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json"
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'a': 5, 'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'users': ['0xDBFB7'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources', 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'root_json_file': '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json'}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "style_blurb": "You're talking to future you.",
+ "organization_name": "Daniel's",
+ "users": [
+  "0xDBFB7"
+ ],
+ "default_project_categories": [
+  "Flagship",
+  "Technique",
+  "Learning"
+ ],
+ "project_rel_archive_dir": "sources",
+ "default_root_directories": [
+  "sources",
+  "media",
+  "hardware",
+  "firmware",
+  "software",
+  "mechanical"
+ ],
+ "root_json_file": "/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json"
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'users': ['0xDBFB7'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources', 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'root_json_file': '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json'}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:initializing root json
+DEBUG:root:Read json 
+{'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'users': ['0xDBFB7'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources', 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'root_json_file': '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json'}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:Writing json
+ {
+ "projects": []
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'users': ['0xDBFB7'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources', 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'root_json_file': '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json'}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:Read json 
+{'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "organization_name": "Daniel's",
+ "default_project_categories": [
+  "Flagship",
+  "Technique",
+  "Learning"
+ ],
+ "project_rel_archive_dir": "sources",
+ "default_root_directories": [
+  "sources",
+  "media",
+  "hardware",
+  "firmware",
+  "software",
+  "mechanical"
+ ],
+ "users": [
+  "0xDBFB7"
+ ],
+ "root_json_file": "/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json",
+ "style_blurb": "You're talking to future you."
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'organization_name': "Daniel's", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources', 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'users': ['0xDBFB7'], 'root_json_file': '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave//root.json', 'style_blurb': "You're talking to future you."}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_settings.json
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:35:32] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_conf.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_conf.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat

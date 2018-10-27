@@ -88,7 +88,7 @@ def create_project():
 
 @app.route('/new_project',methods=['GET', 'POST'])
 def new_project():
-    current_settings = hargrave_fs.get_settings()
+    current_root_json = hargrave_fs.get_root_json()
     #Form data is sent via a JS/ajax post request. The reply is injected into an alert.
     if request.method == 'POST':
 
