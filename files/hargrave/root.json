@@ -1,0 +1,24 @@
+{
+ "settings": {
+  "project_rel_archive_dir": "sources/",
+  "style_blurb": "You're talking to future you.",
+  "default_root_directories": [
+   "sources",
+   "media",
+   "hardware",
+   "firmware",
+   "software",
+   "mechanical"
+  ],
+  "organization_name": "Daniel's",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": []
+}

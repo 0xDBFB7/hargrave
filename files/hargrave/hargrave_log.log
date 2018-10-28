@@ -2671,3 +2671,251 @@ INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/har
 INFO:werkzeug: * Restarting with stat
 INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
 INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:14] "GET /new_project HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:14] "GET /new_project?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:14] "GET /new_project?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:14] "GET /new_project?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:14] "GET /new_project?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:15] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:15] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:15] "GET /new_project HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:15] "GET /new_project?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:15] "GET /new_project?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:15] "GET /new_project?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:15] "GET /new_project?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:15] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 19:55:15] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_fs.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "project_rel_archive_dir": "sources/",
+  "organization_name": "Daniel's",
+  "style_blurb": "You're talking to future you.",
+  "default_root_directories": [
+   "sources",
+   "media",
+   "hardware",
+   "firmware",
+   "software",
+   "mechanical"
+  ],
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": []
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources/', 'organization_name': "Daniel's", 'style_blurb': "You're talking to future you.", 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'users': ['0xDBFB7']}, 'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "project_rel_archive_dir": "sources/",
+  "organization_name": "Daniel's",
+  "style_blurb": "You're talking to future you.",
+  "default_root_directories": [
+   "sources",
+   "media",
+   "hardware",
+   "firmware",
+   "software",
+   "mechanical"
+  ],
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": []
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources/', 'organization_name': "Daniel's", 'style_blurb': "You're talking to future you.", 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'users': ['0xDBFB7']}, 'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "projects": [],
+ "settings": {
+  "users": [
+   "0xDBFB7"
+  ],
+  "style_blurb": "You're talking to future you.",
+  "organization_name": "Daniel's",
+  "default_root_directories": [
+   "sources",
+   "media",
+   "hardware",
+   "firmware",
+   "software",
+   "mechanical"
+  ],
+  "project_rel_archive_dir": "sources/",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ]
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'project_rel_archive_dir': 'sources/', 'default_project_categories': ['Flagship', 'Technique', 'Learning']}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'project_rel_archive_dir': 'sources/', 'default_project_categories': ['Flagship', 'Technique', 'Learning']}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:Writing json
+ {
+ "projects": [],
+ "settings": {
+  "users": [
+   "0xDBFB7"
+  ],
+  "a": 5,
+  "style_blurb": "You're talking to future you.",
+  "organization_name": "Daniel's",
+  "default_root_directories": [
+   "sources",
+   "media",
+   "hardware",
+   "firmware",
+   "software",
+   "mechanical"
+  ],
+  "project_rel_archive_dir": "sources/",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ]
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'users': ['0xDBFB7'], 'a': 5, 'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'project_rel_archive_dir': 'sources/', 'default_project_categories': ['Flagship', 'Technique', 'Learning']}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "projects": [],
+ "settings": {
+  "users": [
+   "0xDBFB7"
+  ],
+  "style_blurb": "You're talking to future you.",
+  "organization_name": "Daniel's",
+  "default_root_directories": [
+   "sources",
+   "media",
+   "hardware",
+   "firmware",
+   "software",
+   "mechanical"
+  ],
+  "project_rel_archive_dir": "sources/",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ]
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'project_rel_archive_dir': 'sources/', 'default_project_categories': ['Flagship', 'Technique', 'Learning']}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave_conf.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "project_rel_archive_dir": "sources/",
+  "style_blurb": "You're talking to future you.",
+  "default_root_directories": [
+   "sources",
+   "media",
+   "hardware",
+   "firmware",
+   "software",
+   "mechanical"
+  ],
+  "organization_name": "Daniel's",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": []
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'settings': {'organization_name': "Daniel's", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'project_rel_archive_dir': 'sources/', 'style_blurb': "You're talking to future you.", 'users': ['0xDBFB7']}, 'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:55] "GET /new_project HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:55] "GET /new_project?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:55] "GET /new_project?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:55] "GET /new_project?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:55] "GET /new_project?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:55] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:55] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'settings': {'organization_name': "Daniel's", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'project_rel_archive_dir': 'sources/', 'style_blurb': "You're talking to future you.", 'users': ['0xDBFB7']}, 'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'settings': {'organization_name': "Daniel's", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical'], 'project_rel_archive_dir': 'sources/', 'style_blurb': "You're talking to future you.", 'users': ['0xDBFB7']}, 'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:01:58] "GET /new_project?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'project_rel_archive_dir': 'sources/', 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'users': ['0xDBFB7'], 'default_root_directories': ['sources', 'media', 'hardware', 'firmware', 'software', 'mechanical']}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/root.json
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2018 20:02:31] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat

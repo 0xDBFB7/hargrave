@@ -40,11 +40,11 @@ CWD = os.getcwd() + '/'
 #I'll fix that once I figure out how exactly project nesting should work.
 def get_root_json():
     try:
-        loaded_json = load_json(get_settings()["root_json_file"])
+        loaded_json = load_json(hargrave_conf.ROOT_JSON_FILE)
         return loaded_json
     except FileNotFoundError:
         initialize_root_json()
-        loaded_json = load_json(get_settings()["root_json_file"])
+        loaded_json = load_json(hargrave_conf.ROOT_JSON_FILE)
         return loaded_json
 
 def write_root_json(new_dict):

@@ -68,8 +68,18 @@ def validate_project_form(form_dict):
 
     return 0
 
-def create_project():
+
+
+def create_project(form_dict):
+    """
+    Now we want to
+    1. Add project to root project listing (this might not be required later on?
+    Might be easier just to search for existing project.json files.)
+    """
     root_json = hargrave_fs.load_json(hargrave_conf.ROOT_JSON_FILE)
+
+    os.path.isfile()
+    root_json['projects'].append(project)
 
     project = {}
     #All timestamps are unix epochs, purely because I happen to like unix time.
@@ -97,14 +107,14 @@ def new_project():
             #If something's wrong with the user's input, throw up an error.
             return validation_result
 
-        validate_project()
+        create_project()
 
         return json.dumps({"success":1,"project_id":request.form.get("project_id")})
 
-    return render_template('new_project.html', USERS=current_settings["users"])
+    return render_template('new_project.html', USERS=current_root_json["settings"]["users"])
 
 @app.route('/project',methods=['GET', 'POST'])
 def project():
-    current_settings = hargrave_fs.get_settings()
+    current_root_json = hargrave_fs.get_root_json()
 
-    return render_template('project.html', USERS=current_settings["users"])
+    return render_template('project.html', USERS=current_root_json["settings"]["users"])
