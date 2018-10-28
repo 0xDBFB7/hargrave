@@ -50,5 +50,12 @@ def test_new_project_validation(delete_root_json):
     "start_date":"2018-10-27 12:05 PM","author":""}
     assert hargrave.validate_project_form(new_project_dict)["success"] == 0
 
+    new_project_dict = {"display_name":"test","project_id":"t-",
+    "start_date":"2018-10-27 12:05 PM","author":"0xDBFB7"}
+    assert hargrave.validate_project_form(new_project_dict)["success"] == 0
+
 ##########Make sure that new projects can't overwrite old.######
-def test_project_creation_existing():
+def test_project_creation_existing(delete_root_json):
+    new_project_dict = {"display_name":"test_hargrave_project","project_id":"test_hargrave_project",
+    "start_date":"2018-10-27 12:05 PM","author":"0xDBFB7"}
+    hargrave.create_project(new_project_dict)

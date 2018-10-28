@@ -1,7 +1,16 @@
 {
+ "projects": [],
  "settings": {
   "project_rel_archive_dir": "sources/",
-  "style_blurb": "You're talking to future you.",
+  "organization_name": "Daniel's",
+  "users": [
+   "0xDBFB7"
+  ],
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
   "default_root_directories": [
    "sources",
    "media",
@@ -10,15 +19,6 @@
    "software",
    "mechanical"
   ],
-  "organization_name": "Daniel's",
-  "default_project_categories": [
-   "Flagship",
-   "Technique",
-   "Learning"
-  ],
-  "users": [
-   "0xDBFB7"
-  ]
- },
- "projects": []
+  "style_blurb": "You're talking to future you."
+ }
 }

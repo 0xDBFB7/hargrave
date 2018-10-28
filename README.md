@@ -60,3 +60,8 @@ If you're going to use this, make sure that the http port in question is firewal
 - [ ] ~~SSH compatible?~~ No longer required - cert pinning deals with this just fine.
 - [ ] ~~android app integration for science on-the-go?~~ Using certs obviates the need for this.
 - [ ] "copy process" button
+
+How can we log cases where a parameter or variable is not known with certainty?
+We don't want to promote assumption of correct values, which might happen
+if we just have a key/value...Ooh, pop-up footnotes associated with variables!
+How it was measured, what questionable features this variable might have, etc.

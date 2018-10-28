@@ -44,7 +44,7 @@ def validate_project_form(form_dict):
     """
     A little bit of server-side validation for the 'new project' form.
     Returns 0 if everything looks good,
-    or dumps a json string with an error message if something needs attention.
+    or dumps a dict with an error message if something needs attention.
     """
 
     if(not form_dict["project_id"]):
@@ -68,32 +68,43 @@ def validate_project_form(form_dict):
 
     return 0
 
-
-
 def create_project(form_dict):
     """
     Now we want to
-    1. Add project to root project listing (this might not be required later on?
-    Might be easier just to search for existing project.json files.)
+    1. Add project to the root.json project listing (this might not be required later on, as
+    it might be easier just to search for existing project.json files in PROJECT_DIR)
+    2. Create a folder with the project ID in projects/ if it doesn't yet exist,
+    and create all subdirs as requested in settings.
+    3. Create a file called hargrave_project.json if it doesn't yet exist.
+    4. Initialize a git repo (if it doesn't yet exist), make an initial commit, and set the remote origin.
     """
-    root_json = hargrave_fs.load_json(hargrave_conf.ROOT_JSON_FILE)
-
-    os.path.isfile()
+    root_json = get_root_json()
+    #Existence checking is done in validate_project_form - not sure if that's ideal,
+    #but whatever.
+    project = {}
+    project["opened_count"] = 0 #number of times this project has been opened
+                                #primarily for alternate sorting
+    project["last_opened"] = time.time() #Last time this has been
+    project["display_name"] = request.form.get('display_name')
+    project["project_id"] = request.form.get('project_id')
     root_json['projects'].append(project)
+    write_root_json(root_json)
+
+    for subdir in root_json['settings']["default_directories"]:
+        os.makedirs(hargrave_conf.PROJECTS_DIR + subdir, exist_ok=True)
 
     project = {}
     #All timestamps are unix epochs, purely because I happen to like unix time.
-    project['start_date'] = datetime.strptime(request.form.get("start_date"),'%Y-%m-%d %I:%M %p').strftime("%s")
+    project['start_date'] = int(datetime.strptime(request.form.get("start_date"),'%Y-%m-%d %I:%M %p').strftime("%s"))
     project['creation_date'] = time.time()
     project['display_name'] = request.form.get('display_name')
     project['project_id'] = request.form.get('project_id')
     root_json['projects'].append(project)
 
 
-    #subprocess.call(["xdg-open", hargrave_conf.ROOT_PROJECT_DIR])
+    subprocess.call(["xdg-open", hargrave_conf.PROJECTS_DIR])
 
     write_json(hargrave_conf.ROOT_JSON_FILE,root_json)
-    return AssertionError
 
 
 @app.route('/new_project',methods=['GET', 'POST'])
@@ -105,9 +116,9 @@ def new_project():
         validation_result = validate_project_form(request.form)
         if(validation_result):
             #If something's wrong with the user's input, throw up an error.
-            return validation_result
+            return json.dumps(validation_result)
 
-        create_project()
+        create_project(request.form)
 
         return json.dumps({"success":1,"project_id":request.form.get("project_id")})
 
