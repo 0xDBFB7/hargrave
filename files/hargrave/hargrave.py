@@ -78,33 +78,34 @@ def create_project(form_dict):
     3. Create a file called hargrave_project.json if it doesn't yet exist.
     4. Initialize a git repo (if it doesn't yet exist), make an initial commit, and set the remote origin.
     """
-    root_json = get_root_json()
+
+    PROJECT_DIR = hargrave_conf.PROJECTS_DIR + form_dict["project_id"] + '/'
+
+
+    root_json = hargrave_fs.get_root_json()
     #Existence checking is done in validate_project_form - not sure if that's ideal,
     #but whatever.
     project = {}
     project["opened_count"] = 0 #number of times this project has been opened
                                 #primarily for alternate sorting
     project["last_opened"] = time.time() #Last time this has been
-    project["display_name"] = request.form.get('display_name')
-    project["project_id"] = request.form.get('project_id')
+    project["display_name"] = form_dict['display_name']
+    project["project_id"] = form_dict['project_id']
     root_json['projects'].append(project)
-    write_root_json(root_json)
+    hargrave_fs.write_root_json(root_json)
 
     for subdir in root_json['settings']["default_directories"]:
-        os.makedirs(hargrave_conf.PROJECTS_DIR + subdir, exist_ok=True)
+        os.makedirs(PROJECT_DIR + subdir, exist_ok=True)
 
-    project = {}
-    #All timestamps are unix epochs, purely because I happen to like unix time.
-    project['start_date'] = int(datetime.strptime(request.form.get("start_date"),'%Y-%m-%d %I:%M %p').strftime("%s"))
-    project['creation_date'] = time.time()
-    project['display_name'] = request.form.get('display_name')
-    project['project_id'] = request.form.get('project_id')
-    root_json['projects'].append(project)
-
-
-    subprocess.call(["xdg-open", hargrave_conf.PROJECTS_DIR])
-
-    write_json(hargrave_conf.ROOT_JSON_FILE,root_json)
+    #Are we importing an existing project?
+    if(not os.path.isfile(PROJECT_DIR + '/hargrave_project.json')):
+        project = {}
+        #All timestamps are unix epochs, purely because I happen to like unix time.
+        project['start_date'] = int(datetime.strptime(form_dict["start_date"],'%Y-%m-%d %I:%M %p').strftime("%s"))
+        project['creation_date'] = time.time()
+        project['display_name'] = form_dict['display_name']
+        project['project_id'] = form_dict['project_id']
+        hargrave_fs.write_json(PROJECT_DIR + '/hargrave_project.json',project)
 
 
 @app.route('/new_project',methods=['GET', 'POST'])

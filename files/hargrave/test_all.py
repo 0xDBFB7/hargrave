@@ -3,7 +3,7 @@ import hargrave_fs
 import pytest
 import os
 import hargrave_conf
-
+import shutil
 ############Settings############
 #hargrave_conf must be properly configured for this test to pass.
 @pytest.fixture
@@ -30,6 +30,19 @@ def existing_project():
     except:
         pass
 
+@pytest.fixture
+def delete_project():
+    delete_root_json()
+    try:
+        os.remove(hargrave_conf.ROOT_JSON_FILE)
+        shutil.rmtree(hargrave_conf.PROJECTS_DIR + "test_hargrave_project")
+    except:
+        pass
+    yield
+    try:
+        os.remove(hargrave_conf.ROOT_JSON_FILE)
+    except:
+        pass
 
 #this test is quite overloaded.
 def test_root_json(delete_root_json):
@@ -55,7 +68,7 @@ def test_new_project_validation(delete_root_json):
     assert hargrave.validate_project_form(new_project_dict)["success"] == 0
 
 ##########Make sure that new projects can't overwrite old.######
-def test_project_creation_existing(delete_root_json):
+def test_project_creation(delete_project):
     new_project_dict = {"display_name":"test_hargrave_project","project_id":"test_hargrave_project",
     "start_date":"2018-10-27 12:05 PM","author":"0xDBFB7"}
     hargrave.create_project(new_project_dict)

@@ -65,3 +65,5 @@ How can we log cases where a parameter or variable is not known with certainty?
 We don't want to promote assumption of correct values, which might happen
 if we just have a key/value...Ooh, pop-up footnotes associated with variables!
 How it was measured, what questionable features this variable might have, etc.
+
+Oh, we should also have a way to copy sources from one project to another.

@@ -4,6 +4,8 @@ import hargrave_conf
 import os
 from log import *
 
+#subprocess.call(["xdg-open", hargrave_conf.PROJECTS_DIR])
+
 def log(message):
     logging.debug(message)
 
