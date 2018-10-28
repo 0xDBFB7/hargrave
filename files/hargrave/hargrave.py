@@ -16,6 +16,15 @@ from flask import (request, redirect, url_for, session,
                    render_template,abort,send_from_directory)
 app = Flask(__name__,template_folder="template", static_url_path='/assets')
 
+def check_git_status(input_dir):
+    """
+    A convienience function to see if the input directory is a git repo.
+    Returns 0 if input is not inside a repo.
+    """
+    cmd = ['git', 'status']
+    p = subprocess.Popen(cmd, cwd=input_dir)
+    p.wait()
+    return p.returncode == 0
 
 
 @app.route('/js/<path:path>')
@@ -50,7 +59,7 @@ def validate_project_form(form_dict):
     if(not form_dict["project_id"]):
         return {"success":0,"alert_message":"You haven't entered a project ID."}
 
-    if(not form_dict["project_id"].replace('_','').isalpha()):
+    if(not form_dict["project_id"].replace('_','').isalnum()):
         return {"success":0,"alert_message":"Sorry, the project ID only accepts ⁠⁠⁠\
          letters or underscores."}
 
@@ -78,7 +87,6 @@ def create_project(form_dict):
     3. Create a file called hargrave_project.json if it doesn't yet exist.
     4. Initialize a git repo (if it doesn't yet exist), make an initial commit, and set the remote origin.
     """
-
     PROJECT_DIR = hargrave_conf.PROJECTS_DIR + form_dict["project_id"] + '/'
 
 
@@ -105,6 +113,7 @@ def create_project(form_dict):
         project['creation_date'] = time.time()
         project['display_name'] = form_dict['display_name']
         project['project_id'] = form_dict['project_id']
+        project['author'] = form_dict['author']
         hargrave_fs.write_json(PROJECT_DIR + '/hargrave_project.json',project)
 
 

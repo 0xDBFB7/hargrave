@@ -1,10 +1,13 @@
 {
- "projects": [],
+ "projects": [
+  {
+   "opened_count": 0,
+   "project_id": "test_hargrave_project",
+   "last_opened": 1540706622.025847,
+   "display_name": "test_hargrave_project"
+  }
+ ],
  "settings": {
-  "style_blurb": "You're talking to future you.",
-  "users": [
-   "0xDBFB7"
-  ],
   "default_directories": [
    "sources/",
    "media/",
@@ -13,12 +16,16 @@
    "software/",
    "mechanical/"
   ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "style_blurb": "You're talking to future you.",
   "organization_name": "Daniel's",
+  "project_rel_archive_dir": "sources/",
   "default_project_categories": [
    "Flagship",
    "Technique",
    "Learning"
-  ],
-  "project_rel_archive_dir": "sources/"
+  ]
  }
 }
