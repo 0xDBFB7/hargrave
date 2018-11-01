@@ -26,6 +26,13 @@ def check_git_status(input_dir):
     p.wait()
     return p.returncode == 0
 
+def run_command(cmd,input_dir):
+    """
+    Another git convienience function, this time just running
+    an arbitrary command in an arbitrary location and waiting until quit.
+    """
+    p = subprocess.Popen(cmd, cwd=input_dir)
+    p.wait()
 
 @app.route('/js/<path:path>')
 def send_js(path):
@@ -44,8 +51,7 @@ def send_css(path):
 @app.route('/')
 def index():
     root_json = hargrave_fs.get_root_json()
-    current_settings = hargrave_fs.get_settings()
-    return render_template('index.html',settings=current_settings,
+    return render_template('index.html',settings=root_json["settings"],
                                         projects=root_json["projects"])
 
 
@@ -114,8 +120,13 @@ def create_project(form_dict):
         project['display_name'] = form_dict['display_name']
         project['project_id'] = form_dict['project_id']
         project['author'] = form_dict['author']
+        project['sources'] = []
         hargrave_fs.write_json(PROJECT_DIR + '/hargrave_project.json',project)
 
+    if(not check_git_status(PROJECT_DIR)):
+        run_command(["git","init"])
+        if(form_dict["remote_origin"]):
+            run_command(["git","remote","add","origin",form_dict["remote_origin"]])
 
 @app.route('/new_project',methods=['GET', 'POST'])
 def new_project():
@@ -134,6 +145,9 @@ def new_project():
 
     return render_template('new_project.html', USERS=current_root_json["settings"]["users"])
 
+#The project ID can be supplied as a get request variable
+#purely so that the link to a specific project can be shared
+#without having to do some fancy post request magic
 @app.route('/project',methods=['GET', 'POST'])
 def project():
     current_root_json = hargrave_fs.get_root_json()

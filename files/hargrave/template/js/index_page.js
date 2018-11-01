@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $(".clickable-row").click(function() {
+      var id = this.attributes["name"].value;
+      window.location = '/project?project=' + id;
+    });
+
     (function ($) {
         $('#filter').keyup(function () {
             var rex = new RegExp($(this).val(), 'i');
@@ -11,7 +16,4 @@ $(document).ready(function () {
 
     }(jQuery));
 
-    $('#projcts_table').on("click-cell.bs.table", function() {
-     alert("Test");
-    });
 });
