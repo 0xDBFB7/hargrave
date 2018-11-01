@@ -63,8 +63,8 @@ def initialize_root_json():
     defaults["settings"]["organization_name"] = "Daniel's"
     defaults["settings"]["style_blurb"] = "You're talking to future you."
     defaults["settings"]['users'] = ["0xDBFB7"]
-    defaults["settings"]['default_directories'] = ['sources/','media/','hardware/','firmware/','software/','mechanical/']
-    defaults["settings"]['project_rel_archive_dir'] = 'sources/'
+    defaults["settings"]['default_directories'] = ['references/','media/','hardware/','firmware/','software/','mechanical/']
+    defaults["settings"]['project_rel_archive_dir'] = 'references/'
     defaults["settings"]['default_project_categories'] = ['Flagship', 'Technique', 'Learning']
     defaults["projects"] = []
     log("initializing settings")

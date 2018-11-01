@@ -133,7 +133,6 @@ def new_project():
     current_root_json = hargrave_fs.get_root_json()
     #Form data is sent via a JS/ajax post request. The reply is injected into an alert.
     if request.method == 'POST':
-
         validation_result = validate_project_form(request.form)
         if(validation_result):
             #If something's wrong with the user's input, throw up an error.
@@ -150,6 +149,11 @@ def new_project():
 #without having to do some fancy post request magic
 @app.route('/project',methods=['GET', 'POST'])
 def project():
-    current_root_json = hargrave_fs.get_root_json()
+    root_json = hargrave_fs.get_root_json()
+    if(not request.args.get("id") in [x["project_id"] for x in root_json["projects"]]):
+        #We could use a prettier error page here.
+        return abort(404)
 
-    return render_template('project.html', USERS=current_root_json["settings"]["users"])
+    project = [x for x in root_json["projects"] if x["project_id"] == request.args.get("id")][0]
+
+    return render_template('project.html', project=project)

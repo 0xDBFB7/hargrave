@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $(".clickable-row").click(function() {
       var id = this.attributes["name"].value;
-      window.location = '/project?project=' + id;
+      window.location = '/project?id=' + id;
     });
 
     (function ($) {
