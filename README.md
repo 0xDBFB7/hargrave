@@ -1,7 +1,10 @@
+
+
 Hargrave is a way to improve the quality of my research by
 - imposing a slight schema restriction on my notes
 - integrating equations and PDF sources into proper technical reports
 - saving the endless tedium of shifting files around.
+- making it easier to disseminate my findings.
 
 As of this writing, I have a total of 60 project folders consuming ~1.5 Tb, ranging in duration from quick, one-day experiments to rigorous half-decade "flagship" projects.
 
@@ -63,6 +66,7 @@ If you're going to use this, make sure that the http port in question is firewal
 - [ ] ~~SSH compatible?~~ No longer required - cert pinning deals with this just fine.
 - [ ] ~~android app integration for science on-the-go?~~ Using certs obviates the need for this.
 - [ ] "copy process" button
+- [ ] BibTeX integration.
 
 How can we log cases where a parameter or variable is not known with certainty?
 We don't want to promote assumption of correct values, which might happen
