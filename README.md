@@ -37,7 +37,7 @@ If you're going to use this, make sure that the http port in question is firewal
 
 ### My requirements:
 
-- [ ] Configurable auto-generated project directory structure
+- [x] Configurable auto-generated project directory structure
 - [ ] Plays well with gitignore
 - [ ] "process steps" entry, with custom per-experiment parameters and rigid schema
 - [ ] Adds and removes images from media/ from gitignore as desired (and as size allows)
@@ -65,6 +65,7 @@ If you're going to use this, make sure that the http port in question is firewal
 - [ ] inline latex to html/png
 - [ ] ~~SSH compatible?~~ No longer required - cert pinning deals with this just fine.
 - [ ] ~~android app integration for science on-the-go?~~ Using certs obviates the need for this.
+- [ ] Chrome extension for quickly adding references?
 - [ ] "copy process" button
 - [ ] BibTeX integration.
 
