@@ -1,4 +1,4 @@
-
+![](images/kite_1.png)
 
 Hargrave is a way to improve the quality of my research by
 - imposing a slight schema restriction on my notes
