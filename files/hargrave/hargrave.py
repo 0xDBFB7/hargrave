@@ -120,13 +120,16 @@ def create_project(form_dict):
         project['display_name'] = form_dict['display_name']
         project['project_id'] = form_dict['project_id']
         project['author'] = form_dict['author']
-        project['sources'] = []
+        project['references'] = []
+        project['parameterized_logs'] = []
+
         hargrave_fs.write_json(PROJECT_DIR + '/hargrave_project.json',project)
 
     if(not check_git_status(PROJECT_DIR)):
         run_command(["git","init"])
         if(form_dict["remote_origin"]):
             run_command(["git","remote","add","origin",form_dict["remote_origin"]])
+
 
 @app.route('/new_project',methods=['GET', 'POST'])
 def new_project():
@@ -144,9 +147,10 @@ def new_project():
 
     return render_template('new_project.html', USERS=current_root_json["settings"]["users"])
 
+
 #The project ID can be supplied as a get request variable
 #purely so that the link to a specific project can be shared
-#without having to do some fancy post request magic
+#without having to do any fancy magic
 @app.route('/project',methods=['GET', 'POST'])
 def project():
     root_json = hargrave_fs.get_root_json()
@@ -156,8 +160,16 @@ def project():
 
     project = [x for x in root_json["projects"] if x["project_id"] == request.args.get("id")][0]
 
-    project["opened_count"] += 1
-    project["last_opened"] = time.time()
-    hargrave_fs.write_root_json(root_json)
+
+    if request.method == 'POST':
+        if("open_in_file_browser" in request.form.keys()):
+            open_in_file_browser(project["project_id"])
+
+        return json.dumps({"success":1,"project_id":request.form.get("project_id")})
+
+    #This'll keep incrementing even if the user's just browsing around in the project.
+    # project["opened_count"] += 1
+    # project["last_opened"] = time.time()
+    # hargrave_fs.write_root_json(root_json)
 
     return render_template('project.html', project=project)

@@ -1,6 +1,23 @@
 {
+ "projects": [
+  {
+   "project_id": "test",
+   "display_name": "test",
+   "opened_count": 31,
+   "last_opened": 1541301765.1590984
+  }
+ ],
  "settings": {
+  "project_rel_archive_dir": "sources/",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
   "organization_name": "Daniel's",
+  "users": [
+   "0xDBFB7"
+  ],
   "default_directories": [
    "sources/",
    "media/",
@@ -9,23 +26,6 @@
    "software/",
    "mechanical/"
   ],
-  "users": [
-   "0xDBFB7"
-  ],
-  "default_project_categories": [
-   "Flagship",
-   "Technique",
-   "Learning"
-  ],
-  "style_blurb": "You're talking to future you.",
-  "project_rel_archive_dir": "sources/"
- },
- "projects": [
-  {
-   "last_opened": 1541298542.299642,
-   "project_id": "test",
-   "opened_count": 26,
-   "display_name": "test"
-  }
- ]
+  "style_blurb": "You're talking to future you."
+ }
 }
