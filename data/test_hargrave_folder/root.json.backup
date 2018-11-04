@@ -1,5 +1,6 @@
 {
  "settings": {
+  "organization_name": "Daniel's",
   "default_directories": [
    "sources/",
    "media/",
@@ -11,14 +12,20 @@
   "users": [
    "0xDBFB7"
   ],
-  "organization_name": "Daniel's",
-  "style_blurb": "You're talking to future you.",
   "default_project_categories": [
    "Flagship",
    "Technique",
    "Learning"
   ],
+  "style_blurb": "You're talking to future you.",
   "project_rel_archive_dir": "sources/"
  },
- "projects": []
+ "projects": [
+  {
+   "last_opened": 1541298530.6826122,
+   "project_id": "test",
+   "opened_count": 25,
+   "display_name": "test"
+  }
+ ]
 }

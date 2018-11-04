@@ -1,24 +1,5 @@
 <head>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="js/moment.js"></script>
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/index_page.js"></script>
-	<link rel="shortcut icon" href="images/favicon/favicon.ico"/>
-
-	<style>
-		body {
-			-webkit-font-smoothing: antialiased;
-			text-rendering: optimizelegibility;
-		}
-
-	 	redacted {
-			background-color: #000000;
-		  color:transparent;
-		}
-
-	</style>
+	{% include 'boilerplate.html' %}
 </head>
 
 <body>
@@ -31,107 +12,86 @@
         <h4 class="text-muted">Project: {{project["display_name"]}}</h4>
       </div>
 
-      <div id="accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Tree
-              </button>
-              <button type="button" class="btn btn-outline-primary">git commit</button>
-              <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-                Changes:
-              </button>
-              <button type="button" class="btn btn-outline-primary">git push</button>
-            </h5>
-          </div>
+			<div class="card">
+			  <div class="card-header" id="headingOne">
+			    <h5 class="mb-0">
+			      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			        Tree
+			      </button>
+			      <button type="button" class="btn btn-outline-primary">git commit</button>
+			      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+			        Changes:
+			      </button>
+			      <button type="button" class="btn btn-outline-primary">git push</button>
+			    </h5>
+			  </div>
 
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
-
-            </div>
-          </div>
-        </div>
+			  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+			    <div class="card-body">
+			    </div>
+			  </div>
+			</div>
 
 
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Documents
-              </button>
-            </h5>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-            <div class="card-body">
-              <div class="card" style="width">
-                <div class="card-body">
-                  <h5 class="card-title">Scratchpad</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-              <div class="card" style="width">
-                <div class="card-body">
-                  <h5 class="card-title">Scratchpad</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                References
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              <div class="card" style="width">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  External link: <a href="#" class="card-link"></a>
-                  Archived link: <a href="#" class="card-link"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+			<div class="card">
+			  <div class="card-header" id="headingTwo">
+			    <h5 class="mb-0">
+			      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			        Parameterized logs
+			      </button>
+			    </h5>
+			  </div>
+			  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+			    <div class="card-body">
+			      <div class="card" style="width">
+			        <div class="card-body">
+			          <h5 class="card-title">Scratchpad</h5>
+			          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+			          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			          <a href="#" class="card-link">Card link</a>
+			          <a href="#" class="card-link">Another link</a>
+			        </div>
+			      </div>
+			      <div class="card" style="width">
+			        <div class="card-body">
+			          <h5 class="card-title">Scratchpad</h5>
+			          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+			          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+			          <a href="#" class="card-link">Card link</a>
+			          <a href="#" class="card-link">Another link</a>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+
+			<div class="card">
+			  <div class="card-header" id="refAccordionLabel">
+			    <h5 class="mb-0">
+			      <button class="btn btn-link collapsed" data-toggle="collapse show" data-target="#refAccordion" aria-expanded="true" aria-controls="collapseThree">
+			        References
+			      </button>
+			    </h5>
+			  </div>
+			  <div id="refAccordion" class="collapse show" aria-labelledby="refAccordionLabel" data-parent="#accordion">
+			    <div class="card-body">
+			      <div class="card" style="width">
+			        <div class="card-body">
+			          <h5 class="card-title">Card title</h5>
+			          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+			          External link: <a href="#" class="card-link"></a>
+			          Archived link: <a href="#" class="card-link"></a>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
     </div>
   <div>
 
-<!-- Modal -->
-<div class="modal fade" id="git_commit_modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Git commit</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input type="text" class="form-control" id="filter" placeholder="Search for project names..">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Commit</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="modal fade" id="add_reference" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+<div class="modal fade" id="git_commit_modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">

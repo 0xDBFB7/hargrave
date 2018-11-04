@@ -52,7 +52,7 @@ def send_css(path):
 def index():
     root_json = hargrave_fs.get_root_json()
     return render_template('index.html',settings=root_json["settings"],
-                                        projects=root_json["projects"])
+                                        projects=sorted(root_json["projects"],key=lambda k: k['opened_count']))
 
 
 def validate_project_form(form_dict):
@@ -155,5 +155,9 @@ def project():
         return abort(404)
 
     project = [x for x in root_json["projects"] if x["project_id"] == request.args.get("id")][0]
+
+    project["opened_count"] += 1
+    project["last_opened"] = time.time()
+    hargrave_fs.write_root_json(root_json)
 
     return render_template('project.html', project=project)
