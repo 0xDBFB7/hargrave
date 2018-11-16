@@ -1,12 +1,22 @@
-function readUrl(input) {
-  if (input.files && input.files[0]) {
-    let reader = new FileReader();
-    reader.onload = (e) => {
-      let imgData = e.target.result;
-      let imgName = input.files[0].name;
-      input.setAttribute("data-title", imgName);
-      console.log(e.target.result);
-    }
-    reader.readAsDataURL(input.files[0]);
-  }
-}
+$(document).ready(function() {
+
+/////Send the form as an AJAX post request, redirect on success, or write a warning on failure.
+$("#create_project").click(function() {
+  $.ajax({
+      type: "POST",
+      url: '/new_project',
+      data: $("#project_form").serialize(),
+      success: function(data)
+      {
+        var parsed_data = JSON.parse(data)
+        if(parsed_data.success){
+          redirectPost("/project",parsed_data["project_id"])
+        }
+        else{
+          $('#add_reference_alerts').replaceWith(
+            '<div class="alert alert-warning">' + parsed_data.alert_message + '</div>');
+        }
+      }
+    });
+    return false;
+});

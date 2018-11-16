@@ -31,8 +31,9 @@ def run_command(cmd,input_dir):
     Another git convienience function, this time just running
     an arbitrary command in an arbitrary location and waiting until quit.
     """
-    p = subprocess.Popen(cmd, cwd=input_dir)
-    p.wait()
+    p = subprocess.Popen(cmd, cwd=input_dir,stdout=subprocess.PIPE)
+    out, err = p.communicate()
+    return out
 
 @app.route('/js/<path:path>')
 def send_js(path):
@@ -52,7 +53,7 @@ def send_css(path):
 def index():
     root_json = hargrave_fs.get_root_json()
     return render_template('index.html',settings=root_json["settings"],
-                                        projects=sorted(root_json["projects"],key=lambda k: k['opened_count']))
+            projects=sorted(root_json["projects"],key=lambda k: k['opened_count']))
 
 
 def validate_project_form(form_dict):
@@ -66,8 +67,8 @@ def validate_project_form(form_dict):
         return {"success":0,"alert_message":"You haven't entered a project ID."}
 
     if(not form_dict["project_id"].replace('_','').isalnum()):
-        return {"success":0,"alert_message":"Sorry, the project ID only accepts ⁠⁠⁠\
-         letters or underscores."}
+        return {"success":0,"alert_message":
+            "Sorry, the project ID only accepts letters or underscores."}
 
     if(not form_dict["display_name"]):
         return {"success":0,"alert_message":"You haven't entered a display name."}
@@ -160,10 +161,21 @@ def project():
 
     project = [x for x in root_json["projects"] if x["project_id"] == request.args.get("id")][0]
 
+    PROJECT_DIR = hargrave_conf.PROJECTS_DIR + project["project_id"] + '/'
+
 
     if request.method == 'POST':
         if("open_in_file_browser" in request.form.keys()):
             open_in_file_browser(project["project_id"])
+
+        file = request.files['file']
+        log(file)
+        if file:
+            log("User has uploaded files")
+            filename = secure_filename(file.filename)
+
+            file.save(os.path.join(PROJECT_DIR,filename))
+            return hello()
 
         return json.dumps({"success":1,"project_id":request.form.get("project_id")})
 
@@ -172,4 +184,6 @@ def project():
     # project["last_opened"] = time.time()
     # hargrave_fs.write_root_json(root_json)
 
-    return render_template('project.html', project=project)
+    git_changes = run_command(['git','status','--porcelain'],PROJECT_DIR)
+
+    return render_template('project.html',git_changes=git_changes, project=project)

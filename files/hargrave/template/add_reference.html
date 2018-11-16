@@ -1,35 +1,50 @@
-
 <div class="modal fade" id="add_reference" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+
+
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Git commit</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Reference</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
+
+
       <div class="modal-body">
 
+        <div id="alerts"></div>
 
-        <div class="input-group">
-          <textarea class="form-control" id="raw_bibtex" name="raw_bibtex" aria-label="With textarea">Paste raw BibTeX</textarea>
-        </div>
+        <div class="col-md">
+          <div class="row">
+            <div class="input-group">
+              <textarea
+                class="form-control"
+                id="raw_bibtex"
+                name="raw_bibtex"
+                aria-label="With textarea"
+                placeholder="You can paste some raw BibTeX here if you'd like."
+                rows="4" cols="50"
+                ></textarea>
+            </div>
+          </div>
 
-        <div class="row m-b-1">
-          <div class="col-sm-6 offset-sm-3">
-            <button type="button" class="btn btn-primary btn-block" onclick="document.getElementById('inputFile').click()">Add Image</button>
-            <div class="form-group inputDnD">
-              <label class="sr-only" for="inputFile">File Upload</label>
-              <input type="file" class="form-control-file text-primary font-weight-bold" id="inputFile" accept="image/*" onchange="readUrl(this)" data-title="Drag and drop a file">
+          <div class="row">
+            <div class="input-group mt-3 mb-3">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="add_reference_file">
+                <label class="custom-file-label" for="add_reference_file">Choose file</label>
+              </div>
+              <div class="input-group-append">
+                <span class="input-group-text" id="">Upload</span>
+              </div>
             </div>
           </div>
         </div>
-
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Commit</button>
+        <button type="button" class="btn btn-primary">Add</button>
       </div>
     </div>
   </div>

@@ -1,145 +1,176 @@
 <head>
 	{% include 'boilerplate.html' %}
+	<script src="js/add_reference.js"></script>
+
 </head>
 
 <body>
 	<div class="container">
 
-		<div class="col-md-12">
 
-      <div class="text-muted">
-        <div class="row mt-3"></div>
-        <h4 class="text-muted">Project: {{project["display_name"]}}</h4>
-      </div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Project <b>{{project["display_name"]}}</b></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<button type="button" class="btn btn-outline-primary">git commit</button>
+						<button type="button" class="btn btn-outline-primary">git push</button>
+					</li>
+					<li class="nav-item dropdown ml-1">
+						<button type="button dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-outline-primary">changes</button>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							{{ git_changes | safe }}
+							<!-- <a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a> -->
+						</div>
+					</li>
+					<li class="nav-item">
+						<button type="button" class="btn btn-outline-primary">git push</button>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="col-md-12 mt-2">
 
 			<ul class="nav nav-pills nav-fill">
-			  <li class="nav-item"> legal
-			    <a class="nav-link active" href="#">Tree</a>
+			  <li class="nav-item">
+			    <a data-toggle="tab" class="nav-link active" href="#tree">Tree</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="#">Parametric notes</a>
+			    <a  data-toggle="tab" class="nav-link" href="#parametric">Parametric notes</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link" href="#">Documents</a>
+			    <a data-toggle="tab" class="nav-link" href="#documents">Documents</a>
 			  </li>
 			  <li class="nav-item">
-			    <a class="nav-link disabled" href="#">Disabled</a>
+			    <a data-toggle="tab" class="nav-link" href="#references">References</a>
 			  </li>
 			</ul>
 
 
-		<div class="tab-content">
-			<div class="card">
-			  <div class="card-header" id="headingOne">
-			    <h5 class="mb-0">
-			      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			        Tree
-			      </button>
-			      <button type="button" class="btn btn-outline-primary">git commit</button>
-			      <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
-			        Changes:
-			      </button>
-			      <button type="button" class="btn btn-outline-primary">git push</button>
-			    </h5>
-			  </div>
-
-			  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-			    <div class="card-body">
-			    </div>
-			  </div>
-			</div>
+			<div class="tab-content">
 
 
-			<div class="card">
-			  <div class="card-header" id="headingTwo">
-			    <h5 class="mb-0">
-			      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			        Parameterized logs
-			      </button>
-			    </h5>
-			  </div>
-			  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-			    <div class="card-body">
-			      <div class="card" style="width">
-			        <div class="card-body">
-			          <h5 class="card-title">Scratchpad</h5>
-			          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			          <a href="#" class="card-link">Card link</a>
-			          <a href="#" class="card-link">Another link</a>
-			        </div>
-			      </div>
-			      <div class="card" style="width">
-			        <div class="card-body">
-			          <h5 class="card-title">Scratchpad</h5>
-			          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			          <a href="#" class="card-link">Card link</a>
-			          <a href="#" class="card-link">Another link</a>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
+				<div id="tree" class="tab-pane fade in active">
+					<div class="card">
+					  <div class="card-header" id="headingOne">
+					    <h5 class="mb-0">
+					    </h5>
+					  </div>
 
-
-			<div class="card">
-			  <div class="card-header" id="refAccordionLabel">
-			    <h5 class="mb-0">
-			      <button class="btn btn-link collapsed" data-toggle="collapse show" data-target="#refAccordion" aria-expanded="true" aria-controls="collapseThree">
-			        References
-			      </button>
-			    </h5>
-			  </div>
-			  <div id="refAccordion" class="collapse show" aria-labelledby="refAccordionLabel" data-parent="#accordion">
-			    <div class="card-body">
-			      <div class="card" style="width">
-			        <div class="card-body">
-			          <h5 class="card-title">Card title</h5>
-			          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-			          External link: <a href="#" class="card-link"></a>
-			          Archived link: <a href="#" class="card-link"></a>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-
-					<p>
-					  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-					    Link with href
-					  </a>
-					  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-					    Button with data-target
-					  </button>
-					</p>
-					<div class="collapse" id="collapseExample">
-					  <div class="card card-body">
-							raw_bibtex
+					  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+					    <div class="card-body">
+					    </div>
 					  </div>
 					</div>
-			</div>
-    </div>
-  <div>
+				</div>
 
 
-<div class="modal fade" id="git_commit_modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Git commit</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input type="text" class="form-control" id="filter" placeholder="Search for project names..">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Commit</button>
-      </div>
-    </div>
-  </div>
-</div>
+				<div id="parametric" class="tab-pane">
+					<div class="card">
+					  <div class="card-header" id="headingTwo">
+					    <h5 class="mb-0">
+					      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					        Parameterized logs
+					      </button>
+					    </h5>
+					  </div>
+					  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					    <div class="card-body">
+					      <div class="card" style="width">
+					        <div class="card-body">
+					          <h5 class="card-title">Scratchpad</h5>
+					          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+					          <p class="card-text">
+											Some quick example text to build on the card title and make up the bulk of the card's content.
+										</p>
+					          <a href="#" class="card-link">Card link</a>
+					          <a href="#" class="card-link">Another link</a>
+					        </div>
+					      </div>
+					      <div class="card" style="width">
+					        <div class="card-body">
+					          <h5 class="card-title">Scratchpad</h5>
+					          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+					          <p class="card-text">
+											Some quick example text to build on the card title and make up the bulk of the card's content.
+										</p>
+					          <a href="#" class="card-link">Card link</a>
+					          <a href="#" class="card-link">Another link</a>
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
 
+
+				<div id="documents" class="tab-pane">
+
+				</div>
+
+
+				<div id="references" class="tab-pane">
+					{% for reference in project["references"] %}
+						<div class="card">
+					    <div class="card-body">
+					      <div class="card" style="width">
+					        <div class="card-body">
+					          <h5 class="card-title">Card title</h5>
+					          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+					          External link: <a href="#" class="card-link"></a>
+					          Archived link: <a href="#" class="card-link"></a>
+					        </div>
+					      </div>
+					  	</div>
+						<p>
+						  <a
+								class="btn btn-primary"
+								data-toggle="collapse"
+								href="#collapseExample"
+								role="button"
+								aria-expanded="false"
+								aria-controls="collapseExample">
+						    Link with href
+						  </a>
+						  <button
+								class="btn btn-primary"
+								type="button"
+								data-toggle="collapse"
+								data-target="#collapseExample"
+								aria-expanded="false"
+								aria-controls="collapseExample">
+						    Button with data-target
+						  </button>
+						</p>
+						<div class="collapse" id="collapseExample">
+						  <div class="card card-body">
+								raw_bibtex
+						  </div>
+						</div>
+					</div>
+					{% endfor %}
+
+					<button type="button" data-toggle="modal"
+						data-target="#add_reference"
+						class="btn btn-primary btn-lg btn-block mt-2">
+							Add a new reference
+					</button>
+
+				</div>
+
+
+    	</div>
+  	</div>
+
+		{% include 'add_reference.html' %}
+
+	</div>
 </body>
