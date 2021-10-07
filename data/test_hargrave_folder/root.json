@@ -2,29 +2,29 @@
  "projects": [
   {
    "project_id": "test",
-   "display_name": "test",
-   "opened_count": 31,
-   "last_opened": 1541301765.1590984
+   "last_opened": 1542409739.7559924,
+   "opened_count": 0,
+   "display_name": "Test"
   }
  ],
  "settings": {
-  "project_rel_archive_dir": "sources/",
   "default_project_categories": [
    "Flagship",
    "Technique",
    "Learning"
   ],
   "organization_name": "Daniel's",
-  "users": [
-   "0xDBFB7"
-  ],
+  "project_rel_archive_dir": "references/",
   "default_directories": [
-   "sources/",
+   "references/",
    "media/",
    "hardware/",
    "firmware/",
    "software/",
    "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
   ],
   "style_blurb": "You're talking to future you."
  }

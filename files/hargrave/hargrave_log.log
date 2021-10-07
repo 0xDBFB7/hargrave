@@ -15458,3 +15458,722 @@ DEBUG:root:Read json
  from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
 INFO:werkzeug:127.0.0.1 - - [07/Nov/2018 16:06:36] "GET /project?id=test HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [07/Nov/2018 16:06:36] "GET /images/favicon/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'display_name': 'test', 'opened_count': 31, 'last_opened': 1541301765.1590984}], 'settings': {'users': ['0xDBFB7'], 'default_directories': ['sources/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources/', 'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's"}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:17] "GET /css/bootstrap.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:17] "GET /js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:17] "GET /js/jquery-3.3.1.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:17] "GET /js/moment.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:17] "GET /js/index_page.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:17] "GET /images/favicon/favicon.ico HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'display_name': 'test', 'opened_count': 31, 'last_opened': 1541301765.1590984}], 'settings': {'users': ['0xDBFB7'], 'default_directories': ['sources/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'project_rel_archive_dir': 'sources/', 'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's"}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:35] "GET /project?id=test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:35] "GET /css/drag_and_drop.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:35] "GET /js/moment-en-ca.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:35] "GET /js/add_reference.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:35] "GET /css/tempusdominus-bootstrap-4.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 17:48:35] "GET /js/tempusdominus-bootstrap-4.min.js HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 180-800-348
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "style_blurb": "You're talking to future you.",
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": []
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'settings': {'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'style_blurb': "You're talking to future you.", 'users': ['0xDBFB7']}, 'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "style_blurb": "You're talking to future you.",
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": []
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'settings': {'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'style_blurb': "You're talking to future you.", 'users': ['0xDBFB7']}, 'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "style_blurb": "You're talking to future you.",
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": []
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'settings': {'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'style_blurb': "You're talking to future you.", 'users': ['0xDBFB7']}, 'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "style_blurb": "You're talking to future you.",
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": [
+  {
+   "project_id": "test_hargrave_project",
+   "last_opened": 1542409067.0487509,
+   "opened_count": 0,
+   "display_name": "test_hargrave_project"
+  }
+ ]
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Writing json
+ {
+ "project_id": "test_hargrave_project",
+ "references": [],
+ "parameterized_logs": [],
+ "start_date": 1540656300,
+ "creation_date": 1542409067.05109,
+ "author": "0xDBFB7",
+ "display_name": "test_hargrave_project"
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/test_hargrave_project//hargrave_project.json
+DEBUG:root:Write complete.
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "style_blurb": "You're talking to future you.",
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": []
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'settings': {'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'style_blurb': "You're talking to future you.", 'users': ['0xDBFB7']}, 'projects': []}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "style_blurb": "You're talking to future you.",
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": [
+  {
+   "project_id": "test_hargrave_project",
+   "last_opened": 1542409067.064367,
+   "opened_count": 0,
+   "display_name": "test_hargrave_project"
+  }
+ ]
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Writing json
+ {
+ "project_id": "test_hargrave_project",
+ "references": [],
+ "parameterized_logs": [],
+ "start_date": 1540656300,
+ "creation_date": 1542409067.0658495,
+ "author": "0xDBFB7",
+ "display_name": "test_hargrave_project"
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/test_hargrave_project//hargrave_project.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'settings': {'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'style_blurb': "You're talking to future you.", 'users': ['0xDBFB7']}, 'projects': [{'project_id': 'test_hargrave_project', 'last_opened': 1542409067.064367, 'opened_count': 0, 'display_name': 'test_hargrave_project'}]}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Writing json
+ {
+ "settings": {
+  "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "style_blurb": "You're talking to future you.",
+  "users": [
+   "0xDBFB7"
+  ]
+ },
+ "projects": [
+  {
+   "project_id": "test_hargrave_project",
+   "last_opened": 1542409067.064367,
+   "opened_count": 0,
+   "display_name": "test_hargrave_project"
+  },
+  {
+   "project_id": "test_hargrave_project",
+   "last_opened": 1542409067.072776,
+   "opened_count": 0,
+   "display_name": "test_hargrave_project"
+  }
+ ]
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'project_id': 'test_hargrave_project', 'references': [], 'parameterized_logs': [], 'start_date': 1540656300, 'creation_date': 1542409067.0658495, 'author': '0xDBFB7', 'display_name': 'test_hargrave_project'}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/test_hargrave_project/hargrave_project.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "projects": [],
+ "settings": {
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "project_rel_archive_dir": "references/",
+  "style_blurb": "You're talking to future you.",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's"
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'project_rel_archive_dir': 'references/', 'style_blurb': "You're talking to future you.", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's"}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'project_rel_archive_dir': 'references/', 'style_blurb': "You're talking to future you.", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's"}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Writing json
+ {
+ "projects": [],
+ "settings": {
+  "a": 5,
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "project_rel_archive_dir": "references/",
+  "style_blurb": "You're talking to future you.",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's"
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'organization_name': "Daniel's", 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'project_rel_archive_dir': 'references/', 'style_blurb': "You're talking to future you.", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'a': 5}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "projects": [],
+ "settings": {
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "project_rel_archive_dir": "references/",
+  "style_blurb": "You're talking to future you.",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's"
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'project_rel_archive_dir': 'references/', 'style_blurb': "You're talking to future you.", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's"}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "projects": [],
+ "settings": {
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "project_rel_archive_dir": "references/",
+  "style_blurb": "You're talking to future you.",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's"
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'project_rel_archive_dir': 'references/', 'style_blurb': "You're talking to future you.", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's"}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Writing json
+ {
+ "projects": [
+  {
+   "project_id": "test_hargrave_project",
+   "opened_count": 0,
+   "display_name": "test_hargrave_project",
+   "last_opened": 1542409260.5165548
+  }
+ ],
+ "settings": {
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "project_rel_archive_dir": "references/",
+  "style_blurb": "You're talking to future you.",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's"
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Writing json
+ {
+ "creation_date": 1542409260.519029,
+ "display_name": "test_hargrave_project",
+ "references": [],
+ "parameterized_logs": [],
+ "project_id": "test_hargrave_project",
+ "author": "0xDBFB7",
+ "start_date": 1540656300
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/test_hargrave_project//hargrave_project.json
+DEBUG:root:Write complete.
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "projects": [],
+ "settings": {
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "project_rel_archive_dir": "references/",
+  "style_blurb": "You're talking to future you.",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's"
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'project_rel_archive_dir': 'references/', 'style_blurb': "You're talking to future you.", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's"}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Writing json
+ {
+ "projects": [
+  {
+   "project_id": "test_hargrave_project",
+   "opened_count": 0,
+   "display_name": "test_hargrave_project",
+   "last_opened": 1542409260.5289245
+  }
+ ],
+ "settings": {
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "project_rel_archive_dir": "references/",
+  "style_blurb": "You're talking to future you.",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's"
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Writing json
+ {
+ "creation_date": 1542409260.5299165,
+ "display_name": "test_hargrave_project",
+ "references": [],
+ "parameterized_logs": [],
+ "project_id": "test_hargrave_project",
+ "author": "0xDBFB7",
+ "start_date": 1540656300
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/test_hargrave_project//hargrave_project.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [{'opened_count': 0, 'project_id': 'test_hargrave_project', 'display_name': 'test_hargrave_project', 'last_opened': 1542409260.5289245}], 'settings': {'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'project_rel_archive_dir': 'references/', 'style_blurb': "You're talking to future you.", 'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's"}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Writing json
+ {
+ "projects": [
+  {
+   "opened_count": 0,
+   "project_id": "test_hargrave_project",
+   "display_name": "test_hargrave_project",
+   "last_opened": 1542409260.5289245
+  },
+  {
+   "project_id": "test_hargrave_project",
+   "opened_count": 0,
+   "display_name": "test_hargrave_project",
+   "last_opened": 1542409260.5383027
+  }
+ ],
+ "settings": {
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "project_rel_archive_dir": "references/",
+  "style_blurb": "You're talking to future you.",
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's"
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'creation_date': 1542409260.5299165, 'display_name': 'test_hargrave_project', 'references': [], 'start_date': 1540656300, 'project_id': 'test_hargrave_project', 'parameterized_logs': [], 'author': '0xDBFB7'}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/test_hargrave_project/hargrave_project.json
+DEBUG:root:initializing settings
+DEBUG:root:Writing json
+ {
+ "projects": [],
+ "settings": {
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "style_blurb": "You're talking to future you."
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:42] "GET /project?id=test HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:42] "GET /favicon.ico HTTP/1.1" 404 -
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:43] "GET /project?id=test HTTP/1.1" 404 -
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:43] "GET /project?id=test HTTP/1.1" 404 -
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:44] "GET /project?id=test HTTP/1.1" 404 -
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:46] "GET /project?id=test HTTP/1.1" 404 -
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:49] "GET /images/favicon/favicon.ico HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:50] "GET /new_project HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:50] "GET /js/new_project.js HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Read json 
+{'projects': [], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Writing json
+ {
+ "projects": [
+  {
+   "project_id": "test",
+   "last_opened": 1542409739.7559924,
+   "opened_count": 0,
+   "display_name": "Test"
+  }
+ ],
+ "settings": {
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
+  "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
+  "default_directories": [
+   "references/",
+   "media/",
+   "hardware/",
+   "firmware/",
+   "software/",
+   "mechanical/"
+  ],
+  "users": [
+   "0xDBFB7"
+  ],
+  "style_blurb": "You're talking to future you."
+ }
+} to /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Write complete.
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:59] "POST /new_project HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'last_opened': 1542409739.7559924, 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:08:59] "POST /project HTTP/1.1" 404 -
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'last_opened': 1542409739.7559924, 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:09:01] "GET /new_project HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'last_opened': 1542409739.7559924, 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'last_opened': 1542409739.7559924, 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:09:11] "POST /new_project HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'last_opened': 1542409739.7559924, 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'last_opened': 1542409739.7559924, 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:09:12] "POST /new_project HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'last_opened': 1542409739.7559924, 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:09:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:09:14] "GET /images/favicon/favicon.ico HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'last_opened': 1542409739.7559924, 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:09:15] "GET /project?id=test HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [{'project_id': 'test', 'last_opened': 1542409739.7559924, 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/', 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you."}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:09:23] "GET /project?id=test HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:root:Read json 
+{'projects': [{'last_opened': 1542409739.7559924, 'project_id': 'test', 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/'}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:35:09] "GET /project?id=test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:35:09] "GET /images/favicon/favicon.ico HTTP/1.1" 200 -
+DEBUG:root:Read json 
+{'projects': [{'last_opened': 1542409739.7559924, 'project_id': 'test', 'opened_count': 0, 'display_name': 'Test'}], 'settings': {'default_project_categories': ['Flagship', 'Technique', 'Learning'], 'default_directories': ['references/', 'media/', 'hardware/', 'firmware/', 'software/', 'mechanical/'], 'users': ['0xDBFB7'], 'style_blurb': "You're talking to future you.", 'organization_name': "Daniel's", 'project_rel_archive_dir': 'references/'}}
+ from /home/arthurdent/NAS/primary_a/Projects/hargrave/data/test_hargrave_folder/root.json
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:36:40] "GET /project?id=test HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Nov/2018 18:36:40] "GET /images/favicon/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in '/home/arthurdent/NAS/primary_a/Projects/hargrave/files/hargrave/hargrave.py', reloading
+INFO:werkzeug: * Restarting with stat

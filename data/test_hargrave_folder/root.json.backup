@@ -1,8 +1,15 @@
 {
+ "projects": [],
  "settings": {
+  "default_project_categories": [
+   "Flagship",
+   "Technique",
+   "Learning"
+  ],
   "organization_name": "Daniel's",
+  "project_rel_archive_dir": "references/",
   "default_directories": [
-   "sources/",
+   "references/",
    "media/",
    "hardware/",
    "firmware/",
@@ -12,20 +19,6 @@
   "users": [
    "0xDBFB7"
   ],
-  "default_project_categories": [
-   "Flagship",
-   "Technique",
-   "Learning"
-  ],
-  "style_blurb": "You're talking to future you.",
-  "project_rel_archive_dir": "sources/"
- },
- "projects": [
-  {
-   "last_opened": 1541301567.2807984,
-   "project_id": "test",
-   "opened_count": 30,
-   "display_name": "test"
-  }
- ]
+  "style_blurb": "You're talking to future you."
+ }
 }

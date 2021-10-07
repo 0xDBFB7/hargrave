@@ -47,7 +47,7 @@ def delete_project():
 
 #this test is quite overloaded.
 def test_root_json(delete_root_json):
-    assert hargrave_fs.get_root_json()["settings"]['project_rel_archive_dir'] == "sources/"
+    assert hargrave_fs.get_root_json()["settings"]['project_rel_archive_dir'] == "references/"
     test = hargrave_fs.get_root_json()
     test["settings"]['a'] = 5
     hargrave_fs.write_root_json(test)

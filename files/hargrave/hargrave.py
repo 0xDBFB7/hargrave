@@ -148,6 +148,7 @@ def new_project():
 
     return render_template('new_project.html', USERS=current_root_json["settings"]["users"])
 
+def
 
 #The project ID can be supplied as a get request variable
 #purely so that the link to a specific project can be shared
@@ -175,7 +176,7 @@ def project():
             filename = secure_filename(file.filename)
 
             file.save(os.path.join(PROJECT_DIR,filename))
-            return hello()
+            return json.dumps({"success":1,"project_id":request.form.get("project_id")})
 
         return json.dumps({"success":1,"project_id":request.form.get("project_id")})
 

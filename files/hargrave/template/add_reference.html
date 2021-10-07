@@ -13,7 +13,7 @@
 
       <div class="modal-body">
 
-        <div id="alerts"></div>
+        <div id="add_reference_alerts"></div>
 
         <div class="col-md">
           <div class="row">
@@ -36,10 +36,25 @@
                 <label class="custom-file-label" for="add_reference_file">Choose file</label>
               </div>
               <div class="input-group-append">
-                <span class="input-group-text" id="">Upload</span>
+                <button type="button" class="input-group-text" id="upload_reference_file">Upload</button>
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="input-group mt-3 mb-3">
+              <div class="custom-file">
+                <input type="text" class="form-control" placeholder="https://informativeblog.com/page">
+              </div>
+              <div class="input-group-append">
+                <button type="button" class="input-group-text" id="archive">Archive</button>
+              </div>
+            </div>
+          </div>
+          <div id="internal_archive_url"></div>
+
+          <div id="output_bibtex"></div>
+
         </div>
       </div>
       <div class="modal-footer">

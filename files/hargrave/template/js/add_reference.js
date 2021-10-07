@@ -4,18 +4,13 @@ $(document).ready(function() {
 $("#create_project").click(function() {
   $.ajax({
       type: "POST",
-      url: '/new_project',
+      url: '/project',
       data: $("#project_form").serialize(),
       success: function(data)
       {
         var parsed_data = JSON.parse(data)
-        if(parsed_data.success){
-          redirectPost("/project",parsed_data["project_id"])
-        }
-        else{
-          $('#add_reference_alerts').replaceWith(
-            '<div class="alert alert-warning">' + parsed_data.alert_message + '</div>');
-        }
+        $('#add_reference_alerts').replaceWith(
+          '<div class="alert ' parsed_data.add_reference_alerts + '">' + parsed_data.add_reference_alerts + '</div>');
       }
     });
     return false;
