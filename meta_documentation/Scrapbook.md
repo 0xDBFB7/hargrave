@@ -3,17 +3,10 @@
 Memos were organized, and usually typed by Luie's long-time secretary *Ann McLellan*
 who assigned numbers and kept the original copies.
 
-Hargrave: 
-
-The Scientist's Scrapbook
 
 
 a lady scientist
 
-Science, with Texture and Culture!
-
-
-Is it possible to make an electronic lab notebook that intrinsically makes the user a better scientist? 
 
 
 I'm only 30% confident that this will be of any use.
@@ -104,37 +97,8 @@ how much of this do we want to take on responsibility for and feature creep?
 
 Many extremely competent people are working on this problem, and my primitive exploration will certainly never approach their labours.
 
-current options:
-
-- Galaxy Project
-- DrWatson
-- Benchling
-- A wiki. a great option.
-- Notational Velocity.
-- Whitequark's lab notebook
-- eLabFTW
-     elabftw's API is awesome.
-- a google doc.
-     one problem is that you tend to just append to the bottom 
-     no sense of the certainty of a fact,
-    old information is not replaced
-- STAR methods
-- Galaxy project
-- stuff like [lab that bought ipad]
-- that one lab's custom lab scrapbook
-- ornl
-- that math wiki 
-- https://openwetware.org/wiki/Main_Page
-- That one person who passed their qualls by blogging about each paper
-- F1000 
-- MDPI *Standards*
-- https://www.pnas.org/content/115/11/2590
 
 Collection of inspiration and guidelines on lab notebooks
-
-- https://scout.lib.utk.edu/repositories/2/archival_objects/223576
-https://people.ece.cornell.edu/land/ElectronicNotebooks.html
-
 
 
 
@@ -313,7 +277,12 @@ the problem with git is storing stuff like images or datasets. How do we get tha
 represent everything as a computational graph
 
 everything is an object? objects also include "how to obtain". That is, a link to the university's
-server (kind of like Tim Berners Lee's new ideas). On git clone,  
+server (kind of like Tim Berners Lee's~~~~ erlang hash lookup  new ideas). On git clone,  
+
+need a way of quickly linking to other people's work in other repositories - 
+what was that replacement for urls link by the creator of some programming language? Erlang?
+ah yes, "the mess we're in", Joe Armstrong Erlang
+
 
 "fix" vs "edit"? way to justify edits inline
 
@@ -322,20 +291,7 @@ server (kind of like Tim Berners Lee's new ideas). On git clone,
 gpg encrypted
 
 
-search should also include some kind of "category" or "semantic". for instance, I just wanted to note the
-following sentence:
-
-"One interesting change is to git help. We now list commands, grouped by the situation 
-in which you would want to use them. This came from discussion on usability, 
-inspired by one of the talks at GitMerge conference we had in spring."
-(https://git-blame.blogspot.com/)
-
-I think that's pretty clever. Now, when I want to write a cli help in the future,
-I want to be able to see what I thought was clever for some fuzzy collection involving "help",
-without remembering 
-Should also be a cross-project search. should also include software output logs
-Notational Velocity might do this sometimes...
-
+Vue.js?
 
 
 mind mapping really is a cool 
@@ -417,9 +373,6 @@ google scholar - mark paper as uninteresting when doing literature reviews?
 
 no explicit mendeley integration, but ris or whatever import
 
-need a way of quickly linking to other people's work in other repositories - 
-what was that replacement for urls link by the creator of some programming language? Erlang?
-ah yes, "the mess we're in", Joe Armstrong Erlang
 
 
 quick schema changes without versioning? postgresql json?
