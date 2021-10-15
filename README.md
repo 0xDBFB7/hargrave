@@ -3,7 +3,7 @@ Hargrave
 
 The Scientist's Scrapbook
 
-- Prompt-based, rich, structured note taking.
+- Prompt- and form- based, rich, structured note taking.
 
 Interdisiplinary; physical and experimental sciences, computational, but not clinical.
 
@@ -18,23 +18,31 @@ Is it possible to make an electronic lab notebook that intrinsically makes the u
 >
 >  Excellence of design and workmanship will always defy competition.
 
-[Lawrence Hargrave](https://en.wikipedia.org/wiki/Lawrence_Hargrave)'s occasionally-exaggerated contributions to powered flight are well summarized in *Lawrence Hargrave: Myth and Fact in Aeronautical History*. bears his name because he kept [meticulous notes](https://collection.maas.museum/object/325754#&gid=1&pid=1) He was, of course, flawed.
+[Lawrence Hargrave](https://en.wikipedia.org/wiki/Lawrence_Hargrave)'s occasionally-exaggerated contributions to powered flight are well summarized in *Lawrence Hargrave: Myth and Fact in Aeronautical History*. He is known for having kept [meticulous notes](https://collection.maas.museum/object/325754#&gid=1&pid=1). He was, of course, flawed.
 
 <sub>(I'm open to adding a different person here!)</sub>
 
-
-
-# Fantastic existing software, workflows, inspiration, and other things worth reading
+# Better existing software, workflows, inspiration, and other things worth reading
 
 - https://openwetware.org/wiki/Main_Page
 
+- SciNote
+
+Almost every feature I could think of adding is already in SciNote.
 
 - elabFTW
 
+- Wagenaar Lab's ELN / NotedELN
 
+- DrWatson
+
+- Indigo ELN
+
+
+- Some CERN 
 
 - Galaxy Project
-- DrWatson
+
 - Benchling
 - A wiki. a great option.
 - protocols.io
@@ -82,3 +90,10 @@ Notational Velocity might do this sometimes...
 - MDPI *Standards*
 - https://www.pnas.org/content/115/11/2590
 - ORNL
+
+
+
+- LabFolder 
+
+
+Proprietary.

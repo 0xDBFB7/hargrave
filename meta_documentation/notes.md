@@ -10,7 +10,6 @@ How do we deal with big flat files
 
 Everything should be absolutely modular.
 
-
 Pandoc to create html from Markdown blurbs (perhaps cache rendered html) with bibtex.
 Or perhaps just direct mathjax
 
