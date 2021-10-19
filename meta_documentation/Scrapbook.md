@@ -61,7 +61,7 @@ generate output videos
 
 old cern papers at the dawn of the internet where lab notebooks and instruments connect
 
-protocols.io
+protocols.io import and export
 
 it is extremely time consuming to accurately record every experimental detail in 
 a human-readable way 
@@ -242,6 +242,7 @@ material should be there! Of course, each paper's topic is ostensibly novel, so 
 but still!
 
 
+run REPLs through screen to keep them open, pass commands back and forth?
 
 
 actually, the bang bang control can be analytic? since it's just a sum of analytic step functions
