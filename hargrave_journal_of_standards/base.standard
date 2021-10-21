@@ -1,0 +1,16 @@
+
+
+[supersedes_index]
+
+type = key
+
+
+[superseded_index]
+
+superseded_index = key
+
+[reconstructed]
+
+type = checkbox
+
+

@@ -1,6 +1,7 @@
 
 Hargrave
 
+<!----
 The Scientist's Scrapbook
 
 - Prompt- and form- based, rich, structured note taking.
@@ -9,8 +10,9 @@ Interdisiplinary; physical and experimental sciences, computational, but not cli
 
 Science, with Texture and Culture!
 
-
 Is it possible to make an electronic lab notebook that intrinsically makes the user a better scientist? 
+-->
+
 
 >  Workers must root out the idea [that] by keeping the results of their labours to themselves[,] a fortune will be assured to them. Patent fees are much wasted money.
 >
@@ -22,7 +24,31 @@ Is it possible to make an electronic lab notebook that intrinsically makes the u
 
 <sub>(I'm open to adding a different person here!)</sub>
 
-# Better existing software, workflows, inspiration, and other things worth reading
+# Arguably superior software and other things worth reading
+
+An absolutely fantastic resource is https://www.limswiki.org/index.php/Book:LIMSpec_2019_R1
+
+
+- bioGUI https://peerj.com/articles/8111/
+
+Most closely resembles this (although was discovered post!)
+
+uses xml for the standards
+
+Includes a global templates repository just like the one concieved here.
+
+
+
+- LeafLIMS 
+
+written in Python
+
+
+Lua scripting
+
+- renku
+
+- GNU Health
 
 - https://openwetware.org/wiki/Main_Page
 
@@ -37,7 +63,6 @@ Almost every feature I could think of adding is already in SciNote.
 - DrWatson
 
 - Indigo ELN
-
 
 - Some CERN 
 

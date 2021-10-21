@@ -1,0 +1,40 @@
+
+[Standard]
+
+inherits
+
+field = /
+
+name = Lesson Learned
+table_name = lessons_learned
+
+based_on:
+
+
+rationale:
+
+[Functions]
+
+on_create = 
+
+#guide_text = 
+
+[Fields]
+
+# this is first so that info can quickly be dumped from memory.
+[What happened?]
+
+type = Text
+
+
+[circumstance]
+
+
+# modules?
+entry_date = 
+observation_date = 
+
+
+
+[Reminders]
+
