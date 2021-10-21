@@ -401,11 +401,3 @@ drawing scratchpad
 look into data on how long memory lasts - get people to write things down before then 
 
 
-
-
-restructured text has a nice "custom directive" module, specifying "arguments", that might be useful for this purpose
-https://docutils.sourceforge.io/docs/howto/rst-directives.html
-however there seems to be only minimal support for exporting
-https://github.com/sphinx-contrib/restbuilder
-
-
