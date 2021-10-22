@@ -6,3 +6,4 @@ build
 dist
 *.wsgi
 hargrave_managed_storage/
+*.db

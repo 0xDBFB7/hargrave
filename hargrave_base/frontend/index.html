@@ -1,17 +1,15 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> -->
-	<!-- <script src="js/moment.js"></script> -->
-	<!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<!-- <script src="js/bootstrap.min.js"></script> -->
 
 	<link rel="shortcut icon" href="images/favicon/favicon.ico"/>
-	
-	<!-- <script src="js/index_page.js"></script> -->
 
-	<style>
+	{{ script }}
+
+	<!-- <style>
+
 		body {
 			-webkit-font-smoothing: antialiased;
 			text-rendering: optimizelegibility;
@@ -22,60 +20,22 @@
 		  color:transparent;
 		}
 
-	</style>
+	</style> -->
 </head>
 
 <body>
 	<div class="container">
 		<div class="col">
-			<div class="text-muted">
+			<!-- <div class="text-muted"> -->
 				<div class="row mt-3"></div>
 
 				<h4 class="text-muted">Hargrave</h4>
 
 				<div class="row mt-5"></div>
 
-				<div class="row">
-					<div class="col-6">
-						<div class="input-group mb-3">
-							<input type="text" class="form-control" id="filter" placeholder="Search for project names..">
-						</div>
-					</div>
-					<!-- <div class="col-2"></div> -->
-					<div class="col-3">
-						<div class="btn-group" role="group" aria-label="Basic example">
-							<a href="new_project" class="btn btn-secondary">Create new project</a>
-						</div>
-					</div>
-				</div>
+				{{ body | safe }}
 
-				<table class="table table-striped table-hover table-dark" id="projects_table">
-					<!-- <form method="get" id="project_table_form" action="/project"> -->
-					{% if projects %}
-						<thead>
-							<tr>
-								<th style="">Name</th>
-								<th style="">ID</th>
-								<th style="">Blurb</th>
-							</tr>
-						</thead>
-						<tbody class="searchable">
-							{% for project in projects %}
-								<tr class="clickable-row" id='{{ project["project_id"] }}' name='{{ project["project_id"] }}'>
-									<td>{{ project["display_name"] }}</td>
-									<td>{{ project["project_id"] }}</td>
-									<td>{{ project["blurb"] }}</td>
-								</tr>
-							{% endfor %}
-						{% else %}
-							<div class="alert alert-primary" role="alert">
-							  There's nothing here yet - start building cool stuff!
-							</div>
-						{% endif %}
-					</tbody>
-				</table>
-
-			</div>
+			<!-- </div> -->
 		</div>
 	</div>
 </body>

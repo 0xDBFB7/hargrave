@@ -16,4 +16,4 @@ type = checkbox
 
 
 
-fields marked plural are copied when 'add new' is chosen, like 'project' 
+# fields marked plural are copied when 'add new' is chosen, like 'project' 

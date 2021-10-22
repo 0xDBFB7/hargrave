@@ -1,0 +1,26 @@
+
+
+<table class="table table-striped table-hover table-dark" id="projects_table">
+    <thead>
+        <tr>
+            {% for a in header %}
+
+            <th style="">{{ a | safe }}</th>
+
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody class="searchable">
+        {% for item in items %}
+            <tr class="clickable-row">
+                {% for i in item %}
+
+                <td>{{ i | safe }}</td>
+
+                {% endfor %}
+
+            </tr>
+        {% endfor %}
+
+    </tbody>
+</table>

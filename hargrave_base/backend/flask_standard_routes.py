@@ -5,22 +5,28 @@ from . import imports
 from flask import (request, redirect, url_for, session,
                    render_template,abort,send_from_directory)
 
+from hargrave_base.standard.render_standard import *
+
 import os
 
 # from flask_autoindex import AutoIndex
 # AutoIndex(app, browse_root=hargrave_conf.CWD + hargrave_conf.STANDARDS_DIR)
 
 
-@app.route('/standards/', strict_slashes=False)
+@app.route('/standards', strict_slashes=False, defaults={'path': "/"})
 @app.route('/standards/<path:path>')
 def send_standard(path):
     if path.endswith('/'):
-        list_of_files = {}
-        for filename in os.listdir(path):
-            list_of_files[filename] = path + filename
+        list_of_files = []
+        for filename in os.listdir(hargrave_conf.CWD + hargrave_conf.STANDARDS_DIR + path):
+            list_of_files.append([f"<a href=/standards/{path + filename}>{path + filename}</a>"])
 
-        # return render_template('index.html',settings=root_json["settings"],
-        #         projects=sorted(root_json["projects"],key=lambda k: k['opened_count']))
+        table = render_template('table.html',header = ["Standards"], items=list_of_files)
+        return render_template('index.html',body=table)
+        # return send_from_directory(hargrave_conf.STANDARDS_DIR, path)
+        return list_of_files
     else:
-        return send_from_directory(hargrave_conf.STANDARDS_DIR, path)
+        return render_standard(hargrave_conf.CWD + hargrave_conf.STANDARDS_DIR + path)
+        # return send_from_directory(hargrave_conf.STANDARDS_DIR, path)
+
 

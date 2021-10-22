@@ -1,11 +1,12 @@
 
-[Standard]
+[Lessons Learned]
 
-inherits
+inherits:
+    base
 
 field = /
 
-name = Lesson Learned
+instance_name = Lesson Learned
 table_name = lessons_learned
 
 
@@ -23,6 +24,7 @@ on_create =
 [Fields]
 
 # this is first so that info can quickly be dumped from memory.
+
 [What happened?]
 
 type = Text
