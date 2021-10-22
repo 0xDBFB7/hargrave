@@ -1,3 +1,6 @@
 media/
 sources/
 *.pyc
+__pycache__
+build 
+dist

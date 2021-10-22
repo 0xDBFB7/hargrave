@@ -1,33 +1,27 @@
 
-Hargrave
+## Hargrave: The Scientist's Scrapbook
+
+Science, with Texture and Culture!
+
+Is it possible to make an electronic lab notebook that intrinsically makes the user a better scientist? 
+
+"standards framework"
+
+# note: this is an experiment; I've no clue how useful this topology will be.
 
 <!----
-The Scientist's Scrapbook
+
 
 - Prompt- and form- based, rich, structured note taking.
 
 Interdisiplinary; physical and experimental sciences, computational, but not clinical.
 
-Science, with Texture and Culture!
-
-Is it possible to make an electronic lab notebook that intrinsically makes the user a better scientist? 
 -->
 
-
->  Workers must root out the idea [that] by keeping the results of their labours to themselves[,] a fortune will be assured to them. Patent fees are much wasted money.
->
->  The flying machine of the future will not be born fully fledged and capable of a flight for 1000 miles or so. Like everything else it must be evolved gradually. The first difficulty is to get a thing that will fly at all. When this is made, a full description should be published as an aid to others.
->
->  Excellence of design and workmanship will always defy competition.
-
-[Lawrence Hargrave](https://en.wikipedia.org/wiki/Lawrence_Hargrave)'s occasionally-exaggerated contributions to powered flight are well summarized in *Lawrence Hargrave: Myth and Fact in Aeronautical History*. He is known for having kept [meticulous notes](https://collection.maas.museum/object/325754#&gid=1&pid=1). He was, of course, flawed.
-
-<sub>(I'm open to adding a different person here!)</sub>
 
 # Arguably superior software and other things worth reading
 
 An absolutely fantastic resource is https://www.limswiki.org/index.php/Book:LIMSpec_2019_R1
-
 
 - bioGUI https://peerj.com/articles/8111/
 
@@ -122,3 +116,15 @@ Notational Velocity might do this sometimes...
 
 
 Proprietary.
+
+# namesake
+
+>  Workers must root out the idea [that] by keeping the results of their labours to themselves[,] a fortune will be assured to them. Patent fees are much wasted money.
+>
+>  The flying machine of the future will not be born fully fledged and capable of a flight for 1000 miles or so. Like everything else it must be evolved gradually. The first difficulty is to get a thing that will fly at all. When this is made, a full description should be published as an aid to others.
+>
+>  Excellence of design and workmanship will always defy competition.
+
+[Lawrence Hargrave](https://en.wikipedia.org/wiki/Lawrence_Hargrave)'s occasionally-exaggerated contributions to powered flight are well summarized in *Lawrence Hargrave: Myth and Fact in Aeronautical History*. He is known for having kept [meticulous notes](https://collection.maas.museum/object/325754#&gid=1&pid=1). He was, of course, flawed.
+
+<sub>(I'm open to adding a different person here!)</sub>
