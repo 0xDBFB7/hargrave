@@ -15,6 +15,11 @@ programmatic access
 sometimes you'll want to put text in multiple places
 
 
+## Base language
+
+Python because of the huge userbase. Julia was the runner-up; indeed there are some very clever tools like
+https://github.com/GenieFramework/Genie.jl
+
 ## Standards config language
 
 config language versus python class because reload might be easier

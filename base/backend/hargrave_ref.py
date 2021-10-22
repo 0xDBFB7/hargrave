@@ -7,3 +7,5 @@ def log(message):
     logging.debug(message)
 
 pybtex.database.parse_string(value, bib_format, **kwargs)
+
+
