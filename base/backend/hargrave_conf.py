@@ -4,6 +4,7 @@
 
 FRONTEND_DIR = "../frontend/"
 
+STANDARDS_DIR = "../../standards/"
 
 # where large folders are persisted.
 MANAGED_STORAGE_DIR = "../hargrave_managed_storage/"

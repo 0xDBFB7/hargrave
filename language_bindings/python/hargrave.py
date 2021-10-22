@@ -7,3 +7,4 @@ def save_file():
     values = {'DB': 'photcat', 'OUT': 'csv', 'SHORT': 'short'}
 
     r = requests.post(url, files=files, data=values)
+
