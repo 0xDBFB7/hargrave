@@ -1,11 +1,11 @@
 
-from hargrave_flask_app import app
+from hargrave_base import app
 
+from flask import (request, redirect, url_for, session,
+                   render_template,abort,send_from_directory)
 
 ##################Serve the index page#############
 @app.route('/')
 def index():
-    root_json = hargrave_fs.get_root_json()
-    return render_template('index.html',settings=root_json["settings"],
-            projects=sorted(root_json["projects"],key=lambda k: k['opened_count']))
+    return render_template('index.html',settings={})
 

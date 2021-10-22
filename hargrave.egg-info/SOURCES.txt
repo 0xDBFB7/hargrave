@@ -1,7 +1,9 @@
 README.md
 setup.py
-base/__init__.py
 hargrave.egg-info/PKG-INFO
 hargrave.egg-info/SOURCES.txt
 hargrave.egg-info/dependency_links.txt
 hargrave.egg-info/top_level.txt
+hargrave_base/__init__.py
+hargrave_modules/git.py
+hargrave_modules/open_in_file_browser.py

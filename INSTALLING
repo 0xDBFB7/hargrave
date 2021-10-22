@@ -1,4 +1,8 @@
 
 
-Test install with pip install -e .
+Test module install with pip install -e .
 
+run with 
+
+cd hargrave/
+export FLASK_APP=hargrave_base/backend/app.py; export FLASK_DEBUG=true; python -m flask run

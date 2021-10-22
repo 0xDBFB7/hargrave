@@ -12,7 +12,7 @@ setuptools.setup(
     # long_description=long_description,
     # long_description_content_type="text/markdown",
     # url="https://github.com/pypa/sampleproject",
-    packages=['base'],
+    packages=['hargrave_base', 'hargrave_drivers', 'hargrave_language_bindings', 'hargrave_modules', 'hargrave_standards'],
     # classifiers=[
     # ],
     python_requires='>=3.6',

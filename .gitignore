@@ -4,3 +4,5 @@ sources/
 __pycache__
 build 
 dist
+*.wsgi
+hargrave_managed_storage/
