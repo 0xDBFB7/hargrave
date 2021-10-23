@@ -19,6 +19,14 @@ sometimes you'll want to put text in multiple places
 
 
 
+couchDB and couchapps - "document oriented databases" - look interesting for this application
+
+https://h3rald.com/litestore/
+
+oh, sqlite includes json types, neat
+
+both sqlite and postgres include FTS
+
 ## Base language
 
 Python because of the huge userbase. Julia was the runner-up; indeed there are some very clever tools like

@@ -4,7 +4,6 @@
 
 type = key
 
-
 [superseded_index]
 
 superseded_index = key

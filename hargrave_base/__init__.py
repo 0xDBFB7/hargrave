@@ -12,6 +12,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 
 # from .backend import hargrave_conf
 from .backend.flask_standard_routes import *
-from .backend.backend import *
+from .backend.instance import *
 from .backend.flask_static_routes import *
 from .backend.log import *

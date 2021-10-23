@@ -5,7 +5,7 @@ from flask import (request, redirect, url_for, session,
                    render_template,abort,send_from_directory)
 
 ##################Serve the index page#############
-@app.route('/', methods = ['GET'])
+@app.route('/', methods = ['GET'], defaults={"primary_id":None})
 @app.route('/<int:primary_id>', methods = ['GET', 'POST'])
 def index(primary_id):
 
