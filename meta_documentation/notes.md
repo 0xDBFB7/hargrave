@@ -23,3 +23,7 @@ With a database, how would one define a beaker?
 Beaker should inherit 
 
 
+
+sqlitebrowser works great
+
+https://forums.zotero.org/discussion/87671/a-new-python-tool-kit-for-interacting-with-the-locally-hosted-zotero-database

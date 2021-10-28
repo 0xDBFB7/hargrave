@@ -3,7 +3,7 @@
 Memos were organized, and usually typed by Luie's long-time secretary *Ann McLellan*
 who assigned numbers and kept the original copies.
 
-
+https://en.m.wikipedia.org/wiki/Procedural_knowledge - although the people associated with PN seem to have been more 
 
 a lady scientist
 
@@ -30,6 +30,21 @@ https://alvarezphysicsmemos.lbl.gov/index.html
 Though the memos were informal in the sense of presentation, they had an extremely rigorous system of review as they were read and digested by all of the other group members who might be interested in the subject, and who were definitely not shy in providing critiques of the work. They were a
 
 
+what did you do
+what did you math
+what did you see 
+what did you think
+
+single letter notetaking and keyboard 
+
+overwrite with new information
+
+image. describe.
+
+image from phone. paramters.
+
+
+color coded
 
 --------------------------------
 
@@ -122,7 +137,16 @@ would have a master globally editable literature review
 (on the other hand the entire point is when you have a novel idea, so 
 doing that sort of thing is maybe not useful)
 
+---------------
 
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3039505 - science is haped by wikipedia
+
+https://journals.sagepub.com/doi/full/10.1177/0003122421996323
+
+https://mobile.twitter.com/emollick/status/1385366695305523204
+
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3039505
+------------------
 
 *asciientist*
 
