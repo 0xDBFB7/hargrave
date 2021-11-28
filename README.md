@@ -42,6 +42,8 @@ Lua scripting
 
 - renku
 
+big one
+
 - GNU Health
 
 - https://openwetware.org/wiki/Main_Page
@@ -117,6 +119,11 @@ Notational Velocity might do this sometimes...
 
 Proprietary.
 
+
+- EV-TRACK knowledgebase
+
+
+
 # namesake
 
 >  Workers must root out the idea [that] by keeping the results of their labours to themselves[,] a fortune will be assured to them. Patent fees are much wasted money.
@@ -128,3 +135,12 @@ Proprietary.
 [Lawrence Hargrave](https://en.wikipedia.org/wiki/Lawrence_Hargrave)'s occasionally-exaggerated contributions to powered flight are well summarized in *Lawrence Hargrave: Myth and Fact in Aeronautical History*. He is known for having kept [meticulous notes](https://collection.maas.museum/object/325754#&gid=1&pid=1). He was, of course, flawed.
 
 <sub>(I'm open to adding a different person here!)</sub>
+
+
+
+
+key ideas:
+
+- Standards, not protocols.
+- Global propagation and generalization of mistakes on every level. When one person makes a mistake, nobody should ever make it again, in any field
+- Human factors in science

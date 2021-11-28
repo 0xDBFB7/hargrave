@@ -38,7 +38,7 @@ config language versus python class because reload might be easier
 
 bioGUI uses XML. Pretty reasonable decision.
 
-ConfigParser 
+want to be machine-writeable in the future
 
 restructured text has a nice "custom directive" module, specifying "arguments", that might be useful for this purpose
 https://docutils.sourceforge.io/docs/howto/rst-directives.html
@@ -65,3 +65,6 @@ each standard instance FKs to a specified number of Type table, each of which ha
 
 if I want to access a certain parameter programmatically, I want to get the latest one...
 
+
+how do globally public literature reviews & indexes fit into all this 
+do they go in *standards*?
