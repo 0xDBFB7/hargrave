@@ -23,13 +23,48 @@ Interdisiplinary; physical and experimental sciences, computational, but not cli
 
 An absolutely fantastic resource is https://www.limswiki.org/index.php/Book:LIMSpec_2019_R1
 
-- bioGUI https://peerj.com/articles/8111/
+# https://openbis.ch/
+
+possibly the most mature open source ELN-LIMS 
+
+Pros
+
+- customizable objects and form-like entry
+- very mature; extensive use in .ch science
+- powerful Python, Java, Javascript API
+- 
+https://github.com/aarpon/obit/tree/master
+- really good doumentation
+- 
+Cons
+
+- How can e.g. a Sympy-rich nomenclature be done? 
+- no git interaction?
+- not necessarily easy to do callbacks to run
+- no provisions for "instrument drivers" - might have to be written in Java or go over Python API?
+- java library integration
+- Not necessarily designed for consensus of protocols in the sense of hargrave
+- no provisions for 
+
+# bioGUI https://peerj.com/articles/8111/
 
 Most closely resembles this (although was discovered post!)
 
 uses xml for the standards
 
 Includes a global templates repository just like the one concieved here.
+
+
+- https://github.com/open-lims/open-lims
+
+similar user interface. appears to be very well developed 
+
+
+- kexi microsoft access
+
+# Buhos https://github.com/clbustos/buhos
+
+Fills a slightly ddifferent niche: this is a systematic literature review tool
 
 
 
@@ -39,6 +74,11 @@ written in Python
 
 
 Lua scripting
+
+
+what are the norms of this field? do they need to be altered, how does this paper follow them
+
+docker exec -it mystifying_meninsky bash
 
 - renku
 
@@ -123,6 +163,9 @@ Proprietary.
 - EV-TRACK knowledgebase
 
 
+https://www.bikalims.org/manual/introduction-and-overview/lims-page-lay-out
+
+not my jam
 
 # namesake
 
@@ -141,6 +184,9 @@ Proprietary.
 
 key ideas:
 
-- Standards, not protocols.
+- wiki-like thing for literature reviews ?!?
+- Standards used must first be agreed upon by a consensus system, a mailing list of experts in the field - a publication can change a protocol, or report on a finding, but not both - global repository for standards
 - Global propagation and generalization of mistakes on every level. When one person makes a mistake, nobody should ever make it again, in any field
 - Human factors in science
+
+

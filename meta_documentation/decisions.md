@@ -68,3 +68,16 @@ if I want to access a certain parameter programmatically, I want to get the late
 
 how do globally public literature reviews & indexes fit into all this 
 do they go in *standards*?
+
+
+
+## Meta quoting from within standards
+
+okay, so now I've run into the first problem. I want to quote a NASA document on lessons learned from within a standard.
+I can write this directly into the standard, 
+
+
+zotero quotes are put in .rdf files like this:
+
+<bib:Memo rdf:about="#item_8056">
+    <z:itemType>note</z:itemType>

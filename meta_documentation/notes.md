@@ -27,3 +27,44 @@ Beaker should inherit
 sqlitebrowser works great
 
 https://forums.zotero.org/discussion/87671/a-new-python-tool-kit-for-interacting-with-the-locally-hosted-zotero-database
+
+
+
+
+Libreoffice Base as ELN:
+
+linking to images works fine
+each table schema ("process") is perhaps hard to share openly
+no versioning of schemas
+
+no way to run code to get instrument data
+libreoffice base has python api
+
+libreoffice has neat macro callbacks in the events tab of the form editor
+
+actually, I like calligra Kexi better than LOB!
+kexi is great; no automatic date insert 
+kexi doesn't allow altering database columns after creation atm, which is painful - drwatson does this very well
+the arrow-key back and forward 
+
+
+
+
+https://en.m.wikipedia.org/wiki/IBM_3270 protocol is interesting because it's both thin client and server-rendered, but also info is transfereed amd updated live
+
+
+natural history & museums are good sources of info on long term documentation
+
+when referring to a sequential eqperument, series, etc, saying "latest" is fraught. Say the specific identifier!
+
+
+A standards organization that figures out the best way to do things amd is funded by selling extremely accurate hardware
+
+
+
+heroku hobby - $7 - ssl & certificate management, might be worth it
+https://genieframework.github.io/Genie.jl/dev/tutorials/90--Deploying_With_Heroku_Buildpacks.html
+no persistent storage beyond postgres
+
+
+gollum solves the concurrent edits issue by locking the whole file and alerting if someone else changes it. wonder how openbis does it.

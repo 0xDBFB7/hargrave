@@ -11,6 +11,7 @@ JSON or raw Python as the schema?
 types.md.
 
 
+--------------------------------------------------------------
 
 Everything is a progressive inheritance of detail.
 
@@ -19,6 +20,9 @@ field standard specifies "a step that quantifies", protocol specifies "*the step
 each is compared to the one above
 
 each one of these has layers of oversight?
+
+
+if you repeat an experiment based on a protocol, you can click a button to create all the sub items?
 
 --------------------------------------------------------------
 
@@ -46,7 +50,7 @@ Control S must save.
 
 --------------------------------------
 
-
+Want to access a data item from python. how do I index it? via UUID?
 
 
 

@@ -65,3 +65,45 @@ submitting suggestions and bugs to standards and protocols needs to be seamless,
 
 "write it out quick" memory field 
 
+software specifications
+
+
+
+email with questions:
+
+first "is this message abusive or spam under this definition:"
+
+click [yes no]
+
+email to 3 random people in any field
+
+then move on from there
+
+no deletion, no invisibility
+
+global index of scientific notation? All fields, glossary?
+
+
+"paharphrase" entry that links to a quote - allow minor edits to glue text toghether into paragraphs
+
+noweb -style text inserter for e.g. code documentation
+
+
+using a db vs git for "psuedoversion"-ing makes conflict resolution more troublesome. people need to be able to make changes 
+
+
+servermania hybrid servers, $30 for a E3 VM SSD L1, is actually a really good deal
+
+
+should be able to click any number, any figure, any paragraph in the finished product and see a full linage, both specific and general, of how it was arrived at.
+
+paragraph text: author's intepretation, and then when clicked, above it is all the evidence and quotes from supporting papers it derives from.
+
+click a number ("culture OD"): brings up the exact instance of the protocol,
+duplicate button 
+
+basically we want a linter and a diff tool for science
+
+
+
+label printer for chemical entries with QR code to msds and datasheet?

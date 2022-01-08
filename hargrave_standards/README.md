@@ -20,3 +20,6 @@ how will this work for general actions in specific fields?
 say, "observation". I want to make an observation, and link it with
 
 oh, each instance of a type can have a primary key, and I can link a certain observation with that primary key...
+
+
+"field" is a confusing name ("field" as in "of expertise" or "input area"? )? needs to be 
