@@ -107,3 +107,8 @@ basically we want a linter and a diff tool for science
 
 
 label printer for chemical entries with QR code to msds and datasheet?
+
+
+screen recording while installing programs n stuff
+
+use EPICS as device driver / database backend?
