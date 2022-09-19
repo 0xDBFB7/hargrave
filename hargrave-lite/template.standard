@@ -1,0 +1,13 @@
+[Experiment]
+
+inherits: base
+type: super
+
+[Oscilloscope connection]
+type: dropdown
+retainlevel: 1,2
+rationale:
+  bla bla
+
+options: ANALOG, AUX
+
